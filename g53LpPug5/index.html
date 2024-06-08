@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>什么是 TACACS/TACACS+ 身份验证？ | 大飞狼的部落</title>
+<link rel="shortcut icon" href="https://guozhiman.github.io/favicon.ico?v=1717836526713">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://guozhiman.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="什么是 TACACS/TACACS+ 身份验证？ | 大飞狼的部落 - Atom Feed" href="https://guozhiman.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="TACACS（Terminal Access Controller Access Control System）和TACACS+（TACACS Plus）是用于网络设备身份验证的两种协议。它们被广泛应用于企业网络中，用于对用户进行认证、授权..." />
+    <meta name="keywords" content="jswz" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://guozhiman.github.io">
+  <img class="avatar" src="https://guozhiman.github.io/images/avatar.png?v=1717836526713" alt="">
+  </a>
+  <h1 class="site-title">
+    大飞狼的部落
+  </h1>
+  <p class="site-description">
+    爱亦完，恨亦瞒，只盼忘却，往昔繁远。难，难，难！
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://guozhiman.github.io/s5pw2DNqN/" class="menu" target="_blank">
+          相册
+        </a>
+      
+    
+      
+        <a href="https://guozhiman.github.io/b7iLY3fS4" class="menu" target="_blank">
+          技术文章
+        </a>
+      
+    
+      
+        <a href="https://guozhiman.github.io/tags" class="menu" target="_blank">
+          WIN系统
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              什么是 TACACS/TACACS+ 身份验证？
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-06-08
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://guozhiman.github.io/b7iLY3fS4/" class="post-tag">
+                  # jswz
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>TACACS（Terminal Access Controller Access Control System）和TACACS+（TACACS Plus）是用于网络设备身份验证的两种协议。它们被广泛应用于企业网络中，用于对用户进行认证、授权和审计。</p>
+<p><img src="https://guozhiman.github.io/post-images/1717823251365.png" alt="" loading="lazy"><br>
+TACACS<br>
+TACACS（Terminal Access Controller Access Control System）是一种用于网络设备身份验证的协议，最初由Cisco Systems开发。它最早出现在上世纪80年代，旨在解决早期网络设备的身份验证和授权问题。TACACS早期版本基于UDP协议，后来逐渐演进为基于TCP的版本，以提高安全性和可靠性。</p>
+<p>TACACS的主要目的是允许网络管理员通过中心服务器来管理用户对网络设备的访问权限。它通过将认证、授权和审计功能分离来实现这一目标，从而提供了一种灵活而强大的身份验证机制。</p>
+<p>TACACS 的工作原理<br>
+TACACS协议的工作原理涉及三个主要过程：认证、授权和审计。让我们逐一介绍这些过程：</p>
+<ol>
+<li>
+<p>认证（Authentication）<br>
+在认证阶段，用户尝试连接到网络设备并提供用户名和密码。设备将这些凭据发送到TACACS服务器进行验证。TACACS服务器接收到认证请求后，会检查用户提供的凭据是否正确。如果用户名和密码匹配，则认证成功；否则，认证失败。认证成功后，TACACS服务器将继续处理授权阶段。</p>
+</li>
+<li>
+<p>授权（Authorization）<br>
+在授权阶段，TACACS服务器根据用户的身份和配置文件向设备发送授权信息。这些信息包括用户被允许执行的命令、访问的资源以及其他权限限制。设备根据接收到的授权信息来决定用户可以执行的操作范围。这种分离的授权过程使得管理员可以根据需要灵活地配置和管理用户权限。</p>
+</li>
+<li>
+<p>审计（Accounting）<br>
+审计过程是TACACS的另一个重要组成部分，用于跟踪用户的操作。在用户成功认证和授权后，设备将定期向TACACS服务器发送审计消息，记录用户的活动。这些审计记录包括用户登录时间、执行的操作以及操作的结果。通过审计功能，管理员可以了解用户在网络设备上的活动，并进行必要的审查和调查。</p>
+</li>
+</ol>
+<p>TACACS 的优势<br>
+TACACS协议相对于其他身份验证机制具有一些显著的优势，主要包括：</p>
+<p>灵活性：TACACS将认证、授权和审计过程分离，使得系统更加灵活。管理员可以根据需要配置不同的认证策略和授权规则，以满足特定的安全要求。<br>
+安全性：TACACS提供了强大的加密机制，确保用户凭据在传输过程中的安全性。此外，审计功能还可以帮助管理员监控和审查用户的活动，进一步增强网络安全。<br>
+跨平台支持：TACACS协议是一个通用的身份验证协议，可以在各种网络设备和操作系统上使用。这使得它成为企业网络管理的理想选择，无论是在小型办公室网络还是大型企业网络中都能发挥作用。<br>
+TACACS 的应用场景<br>
+TACACS协议在企业网络中有许多应用场景：</p>
+<p>设备管理：管理员可以使用TACACS来管理对网络设备的访问权限，确保只有授权用户才能登录并执行操作。<br>
+远程访问控制：企业通常使用TACACS来控制远程用户对网络设备的访问，以确保网络安全。<br>
+权限管理：TACACS可以帮助管理员细粒度地管理用户的权限，例如限制用户只能执行特定的命令或访问特定的资源。<br>
+审计跟踪：TACACS的审计功能可以记录用户的操作，帮助企业监控和审查网络活动，以满足合规性要求和安全审查需求。<br>
+TACACS+<br>
+TACACS+是TACACS的改进版本，提供了更强大的安全性和灵活性。与TACACS不同，TACACS+使用了三个单独的过程来处理认证、授权和审计，这种分离的设计使得TACACS+更加灵活和可扩展。</p>
+<p>认证（Authentication）：<br>
+TACACS+认证过程与TACACS类似，用户提供用户名和密码，设备将这些凭据发送到TACACS+服务器进行验证。然而，TACACS+提供了更强大的加密机制，确保用户凭据在传输过程中的安全性。</p>
+<p>授权（Authorization）：<br>
+在授权阶段，TACACS+将认证和授权过程分开，使得系统更加灵活和可管理。TACACS+服务器根据用户的身份和配置文件向设备发送授权信息，设备根据接收到的授权信息来决定用户可以执行的操作范围。</p>
+<p>审计（Accounting）：<br>
+与TACACS类似，TACACS+也提供审计功能，记录用户的操作和活动，帮助管理员进行审计跟踪和合规性审计。</p>
+<p>总结<br>
+TACACS和TACACS+是用于网络设备身份验证的重要协议，它们通过认证、授权和审计过程确保网络安全，并提供对用户权限的精细管理和跟踪功能。TACACS+相较于TACACS在加密性能、分离的授权过程等方面有所提升，但在实际应用中选择合适的协议取决于网络环境和安全需求。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://guozhiman.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
