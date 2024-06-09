@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset={XQ_CHARSET}"/>
+<title>{if $seo_title}{$seo_title}{else}{if $head_title}{$head_title}{$XQ[seo_delimiter]}{/if}{$XQ[sitename]}{/if}</title>
+<meta name="keywords" content="{$head_keywords}"/>
+<meta name="description" content="{$head_description}"/>
+<link rel="stylesheet" type="text/css" href="{XQ_STYLE}style.css"/>
+<script type="text/javascript" src="{XQ_JS}jquery.min.js"></script>
+<script type="text/javascript" src="{XQ_JS}config.js"></script>
+<script type="text/javascript" src="{XQ_JS}xqcms.js"></script>
+<script language="JavaScript">
+function validate() {
+  if ($("#kw").val()=="") {
+	  alert("请输入您要搜索的关键字");
+	  return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body>
+<div class="m">
+<!--s:页头-->
+    <div class="header clearfix">
+      <div class="logo"><a href="{XQ_PATH}"><img src="{if $XQ[logo]}{$XQ[logo]}{else}{XQ_STYLE}images/logo.jpg{/if}" alt="{$XQ[sitename]}" /></a></div> 
+      <div class="logor">
+      <div><span>
+<img border=0 src="{XQ_STYLE}images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$WEB[url]}'); return(false);">设为首页</a> &nbsp; 
+<img border=0 src="{XQ_STYLE}images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('{$WEB[url]}','{$XQ[sitename]}'); return(false);">加入收藏</a> &nbsp; 
+
+<img border=0 src="{XQ_STYLE}images/mail.jpg" align="absmiddle"> <a href="{XQ_PATH}us/conact.html">联系我们</a>
+
+</span></div>
+ 
+      </div>
+    </div>
+<!--e:页头-->
+</div>
+<div class="m">
+{let $auth = cache_read('category-10.php');}  
+<!-- s:导航 -->
+    <div class="menu">
+        <ul>
+            <li><a class="menumain" href="{XQ_PATH}">网站首页</a></li>
+            <li><a class="menumain" href="{XQ_PATH}us/about.html">公司简介</a></li>
+            <li><a class="menumain" href="{$MODULE[8][url]}">新闻资讯</a></li>
+            <li><a class="menumain" href="{$MODULE[9][url]}">成功案例</a></li>
+            <li><a class="menumain" href="{$MODULE[5][url]}">客户验厂</a></li>
+            <li><a class="menumain" href="{$MODULE[10][url]}{$auth[11][url]}">体系认证</a></li>  
+            <li><a class="menumain" href="{$MODULE[10][url]}{$auth[12][url]}">认证机构</a></li>       
+            <li><a class="menumain" href="{XQ_PATH}guestbook/">在线留言</a></li>
+            <li><a class="menumain" href="{XQ_PATH}us/conact.html">联系我们</a></li>
+
+        </ul>
+    </div>
+<!-- e:导航 -->
+</div>
+<div class="m">
+<script type=text/javascript src="{XQ_STYLE}js/advsflashlb.js"></script>
+<div id="swfContent"></div>
+<script type="text/javascript"> 
+	{ad(1)}
+	var flashvars = {xmlData:xmlData};
+	var params = {menu:false,wmode:"opaque"};
+	var attributes = {};
+	swfobject.embedSWF("{XQ_STYLE}images/advsflashlb.swf", "swfContent", "1002", "250", "6","expressInstall.swf", flashvars, params, attributes);
+</script>
+
+</div>
