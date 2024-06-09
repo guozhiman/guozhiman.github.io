@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><meta name="theme-color" content="#3b3e43"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no"/><title>WAN 革命：SD-WAN 与传统 WAN 对比 - 郭智满的部落</title><meta name="description" content="A small and beautiful blogging system. 一款小而美的博客系统。"/><meta property="og:description" content="A small and beautiful blogging system. 一款小而美的博客系统。"/>    <meta name="keywords" content="Solo,Java,博客,开源"/><link rel="dns-prefetch" href="https://new.guozhiman.com"/><link rel="dns-prefetch" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://new.guozhiman.com"><link rel="icon" type="image/png" href="https://b3log.org/images/brand/solo-128.png"/><link rel="apple-touch-icon" href="https://b3log.org/images/brand/solo-128.png"><link rel="shortcut icon" type="image/x-icon" href="https://b3log.org/images/brand/solo-128.png"><meta name="copyright" content="B3log"/><meta http-equiv="Window-target" content="_top"/><meta property="og:locale" content="zh_CN"/><meta property="og:title" content="WAN 革命：SD-WAN 与传统 WAN 对比 - 郭智满的部落"/><meta property="og:site_name" content="郭智满的部落"/><meta property="og:url"      content="https://new.guozhiman.com/articles/2024/06/09/1717898274512.html?"/><meta property="og:image" content="https://b3log.org/images/brand/solo-128.png"/><link rel="search" type="application/opensearchdescription+xml" title="WAN 革命：SD-WAN 与传统 WAN 对比 - 郭智满的部落" href="/opensearch.xml"><link href="https://new.guozhiman.com/rss.xml" title="RSS" type="application/rss+xml" rel="alternate"/><link rel="manifest" href="https://new.guozhiman.com/manifest.json">        <link rel="canonical" href="https://new.guozhiman.com/articles/2024/06/09/1717898274512.html">            <link rel="stylesheet"
+                  href="https://new.guozhiman.com/skins/Bruce/css/base.css?1717895684726"/>
+            <link rel="prev" title="IDS（入侵检测系统）、IPS（入侵防御系统）和防火墙到底有啥区别？" href="https://new.guozhiman.com/articles/2024/06/09/1717897760733.html">
+            <link rel="next" title="技术员联盟 Windows 10 企业版LTSC 21H2(最稳定好用的Win10系统) 2024.6月最新发布" href="https://new.guozhiman.com/articles/2024/06/09/1717898747317.html">
+    <script src="https://cdn.jsdelivr.net/npm/vditor@3.8.4/dist/js/icons/ant.js" async="" id="vditorIconScript"></script>    </head>
+    <body>
+
+<div class="header">
+
+    <div class="container">
+        <div class="col-sm-2"></div>
+        <nav>
+            <a class="nav-item" href="https://new.guozhiman.com">首页</a>
+
+                <a class="nav-item" href="tags/技术文章"
+                   target="_self">技术文章
+                </a>
+                <a class="nav-item" href="tags/WIN系统"
+                   target="_self">Win系统
+                </a>
+
+            <a class="nav-item" href="https://new.guozhiman.com/links.html">友链</a>
+            <a class="nav-item" href="https://new.guozhiman.com/tags.html">标签</a>
+            <a class="nav-item" href="https://new.guozhiman.com/archives.html">存档</a>
+        </nav>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 site article-list">
+                    <div class="article">
+                        <div class="row article">
+                            <h2 class="row article-title">
+                                <a rel="bookmark" href="https://new.guozhiman.com/articles/2024/06/09/1717898274512.html">
+                                    WAN 革命：SD-WAN 与传统 WAN 对比
+                                </a>
+                            </h2>
+
+                            <div class="row article-tags">
+                                <a rel="tag" href="https://new.guozhiman.com/tags/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">
+                                    技术文章</a>
+                            </div>
+
+                            <div class="row article-date">
+                                June 9, 2024
+                            </div>
+
+                            <div class="row article-content code-highlight">
+                                <div class="col-sm-12 vditor-reset vditor-reset--article" id="abstract1717898274512">
+                                    <p>广域网（WAN，Wide Area Network）是一种覆盖广泛地理区域的计算机网络。它的主要目的是连接分布在不同地理位置的局域网（LAN）和其他网络，使它们能够进行数据通信。WAN通常跨越城市、国家，甚至跨越大陆，通过专用链路、卫星通信和公共网络基础设施等实现远距离的网络连接。</p>
+<p>在WAN的架构中，数据传输的核心是通过路由器和交换机等网络设备，根据预定的路由协议将数据从一个地点传送到另一个地点。WAN连接方式包括租用专线、数字订户线（DSL）、光纤、微波和卫星等多种技术手段。WAN的应用范围广泛，包括企业网络、互联网服务提供商（ISP）以及各类政府和教育机构。</p>
+<p><img src="https://b3logfile.com/file/2024/06/solo-fetchupload-7064043510357206200-tPyZtBW.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt=""></p>
+<h2 id="toc_h2_0">WAN的发展历史</h2>
+<p>广域网技术的发展经历了多个重要阶段，每一个阶段都带来了网络性能和功能的显著提升。</p>
+<h3 id="toc_h3_1">初期阶段</h3>
+<p>WAN的最早形式可以追溯到电话网络的出现。早期的WAN主要依靠电话线和拨号连接进行数据传输。这种方式虽然速度较慢，但为远程数据通信奠定了基础。</p>
+<h3 id="toc_h3_2">帧中继和ATM时代</h3>
+<p>20世纪80年代末到90年代初，帧中继（Frame Relay）和异步传输模式（ATM）技术逐渐成为主流。帧中继是一种基于包交换技术的WAN连接方式，能够在较低的成本下提供较高的传输速率和效率。ATM则是一种面向连接的传输技术，能够提供高质量的语音、视频和数据服务。</p>
+<h3 id="toc_h3_3">MPLS的兴起</h3>
+<p>进入21世纪后，多协议标签交换（MPLS，Multiprotocol Label Switching）成为主导技术。MPLS通过标签交换实现快速数据转发，并支持多种协议和服务质量（QoS）保证。MPLS不仅提高了网络的传输效率，还增强了网络的灵活性和可管理性。</p>
+<h3 id="toc_h3_4">SD-WAN的出现</h3>
+<p>随着云计算和大数据的普及，传统WAN的局限性逐渐显现出来。软件定义广域网（SD-WAN）技术应运而生。SD-WAN通过软件定义网络（SDN）技术，实现了对WAN的集中管理和动态优化，能够更好地支持企业的数字化转型需求。</p>
+<h2 id="toc_h2_5">WAN的重要性</h2>
+<p>在现代企业中，WAN扮演着至关重要的角色。它不仅连接着分布在不同地理位置的办公地点，还支持企业的全球业务运营和远程工作需求。</p>
+<h3 id="toc_h3_6">支持全球业务运营</h3>
+<p>对于跨国企业而言，WAN是实现全球业务运营的关键网络基础设施。通过WAN，企业能够在全球范围内实现数据共享和协同工作，提升业务效率和竞争力。</p>
+<h3 id="toc_h3_7">保障远程办公</h3>
+<p>随着远程办公和移动办公的普及，WAN的重要性更加凸显。通过安全稳定的WAN连接，员工可以随时随地访问企业内部资源，保持工作效率和协作能力。</p>
+<p><img src="https://b3logfile.com/file/2024/06/solo-fetchupload-11086243156530145761-Ek5p7f3.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt=""></p>
+<h3 id="toc_h3_8">提供高效的数据传输</h3>
+<p>WAN能够通过高效的数据传输和优化机制，确保各地分支机构和总部之间的数据同步和实时通信。这对于数据密集型业务和实时应用至关重要。</p>
+<h3 id="toc_h3_9">支持云计算和混合云</h3>
+<p>现代企业越来越依赖云计算服务，WAN在连接企业内部网络和云服务提供商之间的过程中发挥了重要作用。SD-WAN特别在优化云连接和提高云应用性能方面展现出显著优势。</p>
+<h2 id="toc_h2_10">传统WAN的架构和工作原理</h2>
+<p>传统WAN架构依赖于多个关键组件和技术，这些组件共同作用以确保数据在广域网络中的高效传输。</p>
+<h3 id="toc_h3_11">传统WAN的架构</h3>
+<h4 id="toc_h4_12">路由器</h4>
+<p>路由器是传统WAN中最重要的设备之一，它负责在不同网络之间转发数据包。路由器根据预先设定的路由协议（如BGP、OSPF等），决定数据包的传输路径，以确保数据能够从源节点传送到目标节点。</p>
+<h4 id="toc_h4_13">MPLS</h4>
+<p>多协议标签交换（MPLS）是一种数据传输机制，通过在数据包前添加标签，实现数据包的快速转发。MPLS网络能够提供高效的路径选择和服务质量（QoS）保证，使其成为企业WAN连接的主流技术之一。</p>
+<h4 id="toc_h4_14">专用链路</h4>
+<p>传统WAN通常依赖于专用链路，如租用专线（Leased Line）和数字订户线（DSL）。这些专用链路提供了稳定的带宽和可靠的连接，但成本较高，且扩展性有限。</p>
+<h4 id="toc_h4_15">帧中继和ATM</h4>
+<p>帧中继和异步传输模式（ATM）是传统WAN中较早期的技术。帧中继通过虚电路实现数据传输，具有较高的传输效率和较低的成本。ATM则提供了面向连接的服务，能够同时支持语音、视频和数据传输，适合多媒体通信应用。</p>
+<h3 id="toc_h3_16">传统WAN的工作原理</h3>
+<p>传统WAN通过各种链路和设备，将分布在不同地理位置的网络连接起来，数据在其中的传输遵循一定的路由协议和策略。</p>
+<h4 id="toc_h4_17">路由选择</h4>
+<p>在传统WAN中，路由器是核心设备。路由器根据路由表和路由协议，选择最佳路径将数据包传输到目标节点。常见的路由协议包括：</p>
+<ul>
+<li><strong>BGP（边界网关协议）</strong> ：主要用于跨自治系统的路由选择，适用于大规模的广域网。</li>
+<li><strong>OSPF（开放最短路径优先）</strong> ：一种链路状态路由协议，适用于单一自治系统内的路由选择。</li>
+</ul>
+<h4 id="toc_h4_18">数据转发</h4>
+<p>在数据传输过程中，路由器根据数据包中的目标地址和路由表信息，将数据包转发到下一跳路由器，直至到达最终目的地。MPLS进一步优化了这一过程，通过标签交换实现数据包的快速转发，减少了路由选择的开销。</p>
+<h4 id="toc_h4_19">网络管理</h4>
+<p>传统WAN的管理通常依赖于网络管理员手动配置和监控。网络管理员需要根据业务需求和网络状况，手动调整路由策略和网络配置，以确保网络的稳定运行和高效传输。</p>
+<h3 id="toc_h3_20">传统WAN的优缺点</h3>
+<p>传统WAN技术在过去几十年中为企业网络通信提供了重要支持，但随着技术的发展，其局限性也逐渐显现。</p>
+<h4 id="toc_h4_21">优点</h4>
+<ul>
+<li><strong>稳定性高</strong> ：传统WAN使用专用链路和成熟的路由技术，能够提供高稳定性和可靠的网络连接。</li>
+<li><strong>安全性强</strong> ：由于依赖于专用链路和封闭的网络环境，传统WAN能够提供较高的安全性，适合传输敏感数据。</li>
+<li><strong>适合大规模网络</strong> ：传统WAN技术如MPLS能够有效支持大规模企业网络，确保不同分支机构之间的高效连接。</li>
+</ul>
+<h4 id="toc_h4_22">缺点</h4>
+<ul>
+<li><strong>成本高</strong> ：传统WAN依赖于专用链路和高性能的网络设备，建设和维护成本较高。</li>
+<li><strong>灵活性差</strong> ：传统WAN的路由和配置需要手动调整，难以快速响应业务需求的变化。</li>
+<li><strong>配置复杂</strong> ：传统WAN的管理和配置复杂，需要专业的网络管理员进行操作和维护。</li>
+<li><strong>扩展性不足</strong> ：随着企业规模的扩大和业务需求的变化，传统WAN在扩展性和适应性方面存在不足，难以满足快速增长的网络需求。</li>
+</ul>
+<h2 id="toc_h2_23">SD-WAN的架构和工作原理</h2>
+<p>软件定义广域网（SD-WAN，Software-Defined Wide Area Network）是一种利用软件定义网络（SDN）技术来优化和管理广域网的解决方案。与传统WAN相比，SD-WAN更加灵活、可扩展，并且能够显著降低网络运营成本。SD-WAN通过集中管理的方式，将多个不同类型的网络连接（如MPLS、宽带、LTE等）整合在一起，提供高效、可靠、安全的数据传输。</p>
+<p><img src="https://b3logfile.com/file/2024/06/solo-fetchupload-6268092685982296243-XmrQege.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt=""></p>
+<h3 id="toc_h3_24">SD-WAN的核心组件</h3>
+<p>SD-WAN的架构主要由以下几个核心组件构成：</p>
+<h4 id="toc_h4_25">SD-WAN控制器</h4>
+<p>SD-WAN控制器是整个SD-WAN系统的“大脑”，负责集中管理和配置所有的网络设备。控制器根据预定义的策略动态调整网络流量，优化数据传输路径，并监控网络性能。控制器通常部署在企业数据中心或云端，提供全局视图和管理功能。</p>
+<h4 id="toc_h4_26">SD-WAN边缘设备</h4>
+<p>SD-WAN边缘设备部署在企业的各个分支机构、数据中心和云平台。这些设备负责执行控制器下发的策略，管理本地流量，并确保数据包按照最优路径传输。边缘设备可以是物理硬件，也可以是虚拟设备，灵活适应不同的部署环境。</p>
+<h4 id="toc_h4_27">虚拟网络叠加</h4>
+<p>虚拟网络叠加（Overlay Network）是SD-WAN的关键技术之一。通过隧道技术（如GRE、IPsec等），SD-WAN在现有的物理网络之上创建虚拟网络叠加层，实现多路径传输和负载均衡。虚拟网络叠加层使得不同类型的链路（如MPLS、宽带、LTE等）能够无缝协同工作，提高网络的灵活性和可靠性。</p>
+<h3 id="toc_h3_28">SD-WAN的工作原理</h3>
+<p>SD-WAN通过软件定义和集中管理的方式，对广域网进行优化和管理，其工作原理包括以下几个方面：</p>
+<h4 id="toc_h4_29">动态路径选择</h4>
+<p>SD-WAN根据实时的网络状况和预定义的策略，动态选择最佳路径传输数据。控制器实时监控各条链路的性能（如带宽、延迟、丢包率等），并根据业务需求调整数据流的传输路径。这种动态路径选择机制确保了数据传输的高效性和可靠性。</p>
+<h4 id="toc_h4_30">应用识别与优先级</h4>
+<p>SD-WAN能够识别不同类型的应用流量，并根据其重要性和需求分配带宽和优先级。例如，关键业务应用（如ERP、CRM系统）的流量可以被优先传输，而视频流或社交媒体流量则可以被限制在一定的带宽内。这种精细化的流量管理方式提高了网络资源的利用效率，保障了关键业务的性能。</p>
+<p><img src="https://b3logfile.com/file/2024/06/solo-fetchupload-17397472356452322797-thOrjJa.png?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt=""></p>
+<h4 id="toc_h4_31">安全性</h4>
+<p>SD-WAN集成了多种安全机制，如端到端加密、入侵检测和防御（IDS/IPS）、防火墙等，确保数据在传输过程中的安全性。同时，SD-WAN能够快速响应安全威胁，动态调整安全策略，提供更高的网络安全保障。</p>
+<h4 id="toc_h4_32">集中管理与自动化</h4>
+<p>通过SD-WAN控制器，企业可以实现对整个广域网的集中管理和监控。控制器提供统一的管理界面，简化了网络配置和维护操作。同时，SD-WAN支持自动化部署和运维，减少了人为操作带来的错误和风险，提高了网络管理的效率。</p>
+<h4 id="toc_h4_33">云连接优化</h4>
+<p>SD-WAN在优化企业内网连接的同时，也能够有效提升云服务的访问性能。通过直接连接云服务提供商的数据中心和边缘节点，SD-WAN降低了访问云服务的延迟，提高了云应用的响应速度。</p>
+<h2 id="toc_h2_34">SD-WAN与传统WAN的对比</h2>
+<p><img src="https://b3logfile.com/file/2024/06/solo-fetchupload-12422884819776714830-QZZT9RP.jpeg?imageView2/2/w/1280/format/jpg/interlace/1/q/100" alt=""></p>
+<h3 id="toc_h3_35">架构对比</h3>
+<p>传统WAN架构主要依赖硬件设备和专用链路，通过静态配置来实现数据传输。其架构特点包括：</p>
+<ul>
+<li><strong>硬件为主</strong> ：路由器、交换机和防火墙等硬件设备是传统WAN的核心组件。</li>
+<li><strong>专用链路</strong> ：依赖租用专线、MPLS等专用链路，提供稳定可靠的连接。</li>
+<li><strong>静态配置</strong> ：路由和流量管理主要通过手动配置和静态路由表实现，缺乏灵活性。</li>
+</ul>
+<p>SD-WAN架构则以软件为主，通过集中管理和虚拟化技术来实现灵活的数据传输。其架构特点包括：</p>
+<ul>
+<li><strong>软件为主</strong> ：SD-WAN控制器通过软件实现集中管理和策略控制。</li>
+<li><strong>多链路整合</strong> ：整合MPLS、宽带、LTE等多种链路，实现动态路径选择和负载均衡。</li>
+<li><strong>动态配置</strong> ：通过实时监控和策略调整，动态优化网络性能和流量管理。</li>
+</ul>
+<h3 id="toc_h3_36">性能对比</h3>
+<p>传统WAN在性能方面的特点包括：</p>
+<ul>
+<li><strong>高稳定性</strong> ：依赖专用链路和成熟的技术，提供高稳定性的网络连接。</li>
+<li><strong>低灵活性</strong> ：静态配置和手动管理使其难以快速响应网络变化和业务需求。</li>
+<li><strong>固定带宽</strong> ：专用链路提供固定带宽，扩展性有限，难以灵活调整资源分配。</li>
+</ul>
+<p>SD-WAN在性能方面的优势明显，包括：</p>
+<ul>
+<li><strong>动态优化</strong> ：通过实时监控和动态路径选择，实现网络资源的最佳利用。</li>
+<li><strong>高灵活性</strong> ：能够快速响应网络状况和业务需求的变化，自动调整配置和策略。</li>
+<li><strong>弹性带宽</strong> ：多链路整合和负载均衡机制提供了弹性带宽，提升了网络的扩展性和适应性。</li>
+</ul>
+<h3 id="toc_h3_37">成本对比</h3>
+<p>传统WAN的成本特点包括：</p>
+<ul>
+<li><strong>建设成本高</strong> ：需要投资高性能的硬件设备和专用链路，初始建设成本较高。</li>
+<li><strong>维护成本高</strong> ：网络的日常维护和配置调整需要专业人员，运营成本较高。</li>
+<li><strong>扩展成本高</strong> ：网络扩展需要增加更多的硬件设备和专用链路，成本显著增加。</li>
+</ul>
+<p>SD-WAN在成本方面具有显著优势，包括：</p>
+<ul>
+<li><strong>建设成本低</strong> ：通过软件定义和虚拟化技术，减少了对高性能硬件和专用链路的依赖，降低了初始建设成本。</li>
+<li><strong>维护成本低</strong> ：集中管理和自动化运维降低了日常维护成本，提高了管理效率。</li>
+<li><strong>扩展成本低</strong> ：网络扩展可以通过软件配置和链路整合实现，成本相对较低，且扩展更加灵活。</li>
+</ul>
+<h3 id="toc_h3_38">管理和运营对比</h3>
+<p>传统WAN的管理和运营特点包括：</p>
+<ul>
+<li><strong>手动配置</strong> ：网络配置和调整需要专业人员手动操作，容易出现人为错误。</li>
+<li><strong>复杂维护</strong> ：网络故障排查和性能优化需要大量的时间和精力，维护复杂。</li>
+<li><strong>分散管理</strong> ：各分支机构的网络设备独立管理，缺乏统一的管理视图。</li>
+</ul>
+<p>SD-WAN在管理和运营方面的优势包括：</p>
+<ul>
+<li><strong>集中管理</strong> ：通过SD-WAN控制器实现全网的集中管理和监控，简化了操作。</li>
+<li><strong>自动化运维</strong> ：支持自动化部署和策略调整，减少了人为操作和错误，提高了管理效率。</li>
+<li><strong>统一视图</strong> ：提供全网的统一视图和实时监控，便于故障排查和性能优化。</li>
+</ul>
+<h3 id="toc_h3_39">安全性对比</h3>
+<p>传统WAN的安全性主要依赖于专用链路和硬件防火墙等设备，特点包括：</p>
+<ul>
+<li><strong>专用链路</strong> ：通过专用链路提供物理隔离，提升了数据传输的安全性。</li>
+<li><strong>硬件防护</strong> ：依靠硬件防火墙和VPN等技术，提供基本的安全防护。</li>
+</ul>
+<p>SD-WAN在安全性方面集成了更多的技术和策略，包括：</p>
+<ul>
+<li><strong>端到端加密</strong> ：通过IPsec等技术实现数据传输的端到端加密，确保数据安全。</li>
+<li><strong>集成安全机制</strong> ：内置防火墙、入侵检测和防御（IDS/IPS）、内容过滤等多种安全功能，提供全面的安全保护。</li>
+<li><strong>动态安全策略</strong> ：能够根据实时威胁和网络状况，动态调整安全策略，提升安全防护能力。</li>
+</ul>
+                                    <p>
+                                        <hr>
+
+标题：WAN 革命：SD-WAN 与传统 WAN 对比<br>
+作者：<a href="https://new.guozhiman.com" target="_blank">guozhiman</a><br>
+地址：<a href="https://new.guozhiman.com/articles/2024/06/09/1717898274512.html" target="_blank">https://new.guozhiman.com/articles/2024/06/09/1717898274512.html</a><br>
+
+<!-- 签名档内可使用 HTML、JavaScript -->
+<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                            <div id="gitalk-container"></div>
+                            <div id="b3logsolocomments"></div>
+                            <div id="vcomment" data-name="guozhiman" data-postId="1717898274512"></div>
+                    </div>
+                    <div id="relevantArticles"></div>
+                    <div id="randomArticles"></div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+<ul class="article__toc">
+        <li class="toc__h2">
+            <a href="#toc_h2_0">WAN的发展历史</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_1">初期阶段</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_2">帧中继和ATM时代</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_3">MPLS的兴起</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_4">SD-WAN的出现</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_5">WAN的重要性</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_6">支持全球业务运营</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_7">保障远程办公</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_8">提供高效的数据传输</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_9">支持云计算和混合云</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_10">传统WAN的架构和工作原理</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_11">传统WAN的架构</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_12">路由器</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_13">MPLS</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_14">专用链路</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_15">帧中继和ATM</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_16">传统WAN的工作原理</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_17">路由选择</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_18">数据转发</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_19">网络管理</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_20">传统WAN的优缺点</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_21">优点</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_22">缺点</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_23">SD-WAN的架构和工作原理</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_24">SD-WAN的核心组件</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_25">SD-WAN控制器</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_26">SD-WAN边缘设备</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_27">虚拟网络叠加</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_28">SD-WAN的工作原理</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_29">动态路径选择</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_30">应用识别与优先级</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_31">安全性</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_32">集中管理与自动化</a>
+        </li>
+        <li class="toc__h4">
+            <a href="#toc_h4_33">云连接优化</a>
+        </li>
+        <li class="toc__h2">
+            <a href="#toc_h2_34">SD-WAN与传统WAN的对比</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_35">架构对比</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_36">性能对比</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_37">成本对比</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_38">管理和运营对比</a>
+        </li>
+        <li class="toc__h3">
+            <a href="#toc_h3_39">安全性对比</a>
+        </li>
+</ul>
+<div class="footer">
+    <br>
+    &copy; 2024 <a href="https://new.guozhiman.com">郭智满的部落</a> 
+</div>
+
+<script>
+  var Label = {
+    speech: true,
+    servePath: "https://new.guozhiman.com",
+    staticServePath: "https://new.guozhiman.com",
+    luteAvailable: false,
+    hljsStyle: 'github',
+    langLabel: "zh_CN",
+    version: "4.4.0",
+    staticSite: true,
+    showCodeBlockLn: false,
+    articleId: "1717898274512",
+  }
+</script>
+<script type="text/javascript" src="https://new.guozhiman.com/js/common.min.js?1717895684726" charset="utf-8"></script>
+<script type="text/javascript" src="https://new.guozhiman.com/skins/Bruce/js/bootstrap.min.js?1717895684726" charset="utf-8"></script>
+<script>
+    Util.setTopBar()
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kanbanniang@0.2.10/index.css"/>
+<script async src="https://cdn.jsdelivr.net/npm/kanbanniang@0.2.10/index.js"></script>
+<div class="solo-kanbanniang">
+    <div class="solo-kanbanniang__tip"></div>
+    <canvas id="soloKanbanniang" width="280" height="250"></canvas>
+    <div class="solo-kanbanniang__tool">
+        <svg id="soloKanbanniangHome" viewBox="0 0 32 32" width="100%" height="100%">
+            <path d="M32 18.967l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18.516v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+        </svg>
+        <svg id="soloKanbanniangRSS" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M320.364 768q0 45.728-32 77.728t-77.728 32-77.728-32-32-77.728 32-77.728 77.728-32 77.728 32 32 77.728zM612.94 838.272q1.152 16-9.728 27.424-10.272 12-26.848 12h-77.152q-14.272 0-24.576-9.44t-11.424-23.712q-12.576-130.848-105.44-223.712t-223.712-105.44q-14.272-1.152-23.712-11.424t-9.44-24.576V402.24q0-16.576 12-26.848 9.728-9.728 24.576-9.728h2.848q91.424 7.424 174.848 46.016t148 103.712q65.152 64.576 103.712 148t46.016 174.848z m292.576 1.152q1.152 15.424-10.272 26.848-10.272 11.424-26.272 11.424h-81.728q-14.848 0-25.44-10.016t-11.136-24.288q-6.848-122.848-57.728-233.44t-132.288-192-192-132.288-233.44-58.272q-14.272-0.576-24.288-11.136t-10.016-24.864V109.664q0-16 11.424-26.272 10.272-10.272 25.152-10.272h1.728q149.728 7.424 286.56 68.576t243.136 168q106.848 106.272 168 243.136t68.576 286.56z"></path>
+        </svg>
+        <svg id="soloKanbanniangChat" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M802.42709 96.163153H219.476155c-84.48109 0-154.896836 71.746044-154.896836 157.840888v393.119449c0 86.072331 70.415746 157.819398 154.896836 157.819399h214.038818V925.470963s22.526039 40.168862 64.767096 5.734608c30.965246-25.819039 126.721123-91.828428 171.775248-123.385145h132.369773c84.502579 0 154.896836-83.21526 154.896836-157.839865V251.125481c0-86.094844-70.394257-154.962328-154.896836-154.962328zM301.144176 518.002714c-39.427988 0-70.416769-31.576159-70.416769-71.746044 0-40.168862 30.988782-71.746044 70.416769-71.746044 39.426965 0 70.393233 31.577183 70.393234 71.746044 0 40.169885-30.966269 71.746044-70.393234 71.746044z m208.411657 0c-39.450501 0-70.415746-31.576159-70.415746-71.746044 0-40.168862 30.965246-71.746044 70.415746-71.746044 39.405475 0 70.394257 31.577183 70.394257 71.746044 0 40.169885-30.988782 71.746044-70.394257 71.746044z m211.203236 0c-39.426965 0-70.416769-31.576159-70.416769-71.746044 0-40.168862 30.988782-71.746044 70.416769-71.746044s70.415746 31.577183 70.415746 71.746044c-0.001023 40.169885-30.988782 71.746044-70.415746 71.746044z"></path>
+        </svg>
+        <svg id="soloKanbanniangChange" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M936.672 193.216l-226.88-64c-8.704-2.528-18.112-1.12-25.824 3.776-7.68 4.864-12.896 12.736-14.432 21.728C655.712 236.928 595.328 288 512 288c-71.424 0-142.464-103.296-163.776-143.104-7.136-13.28-22.528-19.84-37.024-15.68l-224 64C73.472 197.152 64 209.728 64 224v256a31.93 31.93 0 0 0 11.712 24.736c7.392 6.08 17.152 8.512 26.56 6.624L224 487.04V832c0 52.928 43.072 96 96 96h384c52.928 0 96-43.072 96-96V519.04l121.728 24.352c9.44 1.92 19.2-0.544 26.56-6.624C955.68 530.656 960 521.6 960 512V224c0-14.336-9.536-26.912-23.328-30.784zM672 800H352c-17.664 0-32-14.304-32-32s14.336-32 32-32h320c17.696 0 32 14.304 32 32s-14.304 32-32 32z"></path>
+        </svg>
+        <svg id="soloKanbanniangPhoto" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M898.048 258.048q23.552-1.024 46.592 9.216t40.96 27.136 28.672 39.424 10.752 46.08l0 390.144q0 24.576-10.752 47.104t-28.672 40.448-40.96 28.16-47.616 10.24l-697.344 0q-24.576 0-48.64-10.24t-42.496-27.648-29.696-40.448-11.264-48.64l0-381.952q0-22.528 10.752-45.568t28.672-41.472 39.936-30.208 44.544-11.776l63.488 0 13.312-83.968q3.072-20.48 18.432-32.768t34.816-12.288l456.704 0q19.456 0 34.304 10.752t16.896 34.304l14.336 83.968 54.272 0zM548.864 712.704q40.96 0 77.824-15.872t63.488-42.496 42.496-62.976 15.872-77.312-15.872-77.312-42.496-62.976-63.488-42.496-77.824-15.872-77.312 15.872-63.488 42.496-43.008 62.976-15.872 77.312 15.872 77.312 43.008 62.976 63.488 42.496 77.312 15.872z"></path>
+        </svg>
+        <svg id="soloKanbanniangGithub" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M1024 524.8c0 114.346667-32.554667 217.216-97.706667 308.565333-65.066667 91.306667-149.162667 154.538667-252.288 189.610667-11.989333 2.304-20.778667 0.682667-26.325333-4.778667a27.605333 27.605333 0 0 1-8.362667-20.48v-144.213333c0-44.16-11.52-76.501333-34.645333-97.024 25.344-2.730667 48.085333-6.826667 68.309333-12.288a268.629333 268.629333 0 0 0 62.72-26.666667 187.434667 187.434667 0 0 0 53.973334-45.44c14.421333-18.005333 26.197333-41.898667 35.328-71.765333 9.088-29.824 13.653333-64.128 13.653333-102.826667 0-55.125333-17.536-102.058667-52.650667-140.8 16.426667-41.429333 14.677333-87.893333-5.333333-139.392-12.458667-4.096-30.464-1.578667-54.016 7.509334a355.328 355.328 0 0 0-61.312 30.08L640 271.274667a462.336 462.336 0 0 0-128-17.749334c-43.989333 0-86.656 5.930667-128 17.749334a589.824 589.824 0 0 0-28.330667-18.432c-11.776-7.253333-30.336-16.042667-55.68-26.325334-25.344-10.24-44.416-13.312-57.301333-9.216-19.584 51.498667-21.12 97.962667-4.693333 139.434667-35.114667 38.698667-52.650667 85.632-52.650667 140.757333 0 38.698667 4.565333 72.874667 13.653333 102.485334 9.130667 29.610667 20.778667 53.546667 34.986667 71.765333 14.250667 18.218667 32.128 33.493333 53.674667 45.781333 21.546667 12.288 42.453333 21.205333 62.677333 26.666667 20.224 5.461333 43.008 9.557333 68.309333 12.288-17.749333 16.384-28.629333 39.850667-32.64 70.4a130.005333 130.005333 0 0 1-29.994666 10.24c-10.666667 2.261333-23.338667 3.413333-37.973334 3.413333-14.72 0-29.269333-4.906667-43.690666-14.677333-14.464-9.813333-26.794667-24.064-36.992-42.709333a109.226667 109.226667 0 0 0-32.341334-35.541334c-13.141333-9.130667-24.106667-14.592-33.024-16.426666l-13.312-2.048c-9.344 0-15.786667 1.024-19.328 3.072-3.584 2.090667-4.693333 4.693333-3.328 7.893333 1.28 3.157333 3.328 6.4 5.973334 9.557333 2.688 3.2 5.546667 5.930667 8.661333 8.192l4.693333 3.413334c9.770667 4.565333 19.413333 13.226667 29.013334 25.984 9.514667 12.757333 16.512 24.362667 20.992 34.858666l6.656 15.701334c5.76 17.322667 15.530667 31.317333 29.312 42.026666 13.781333 10.666667 28.672 17.536 44.672 20.48 16 2.986667 31.445333 4.565333 46.336 4.821334 14.890667 0.213333 27.221333-0.597333 36.992-2.389334l15.36-2.730666c0 17.28 0.085333 37.546667 0.298666 60.8l0.341334 36.906666a27.050667 27.050667 0 0 1-8.661334 20.48c-5.76 5.461333-14.677333 7.082667-26.666666 4.778667-103.125333-35.072-187.221333-98.261333-252.330667-189.610667C32.554667 742.058667 0 639.146667 0 524.8c0-95.232 22.869333-183.04 68.693333-263.466667A516.266667 516.266667 0 0 1 254.976 70.4C333.44 23.466667 419.114667 0 512 0c92.885333 0 178.56 23.466667 256.981333 70.4a516.266667 516.266667 0 0 1 186.368 190.976C1001.130667 341.802667 1024 429.653333 1024 524.842667z"></path>
+        </svg>
+        <svg id="soloKanbanniangClose" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M517.572566143763 1018.6748601482986C238.26554897656422 1018.6748601482986 11.897910175114305 792.2714997690043 11.897910175114305 513.0002041796496c0-279.3070171671984 226.36763880144977-505.71037754649296 505.6746559686481-505.71037754649296 279.2712955893538 0 505.6746559686481 226.40336037929444 505.6746559686481 505.71037754649296C1023.2472221124112 792.2714997690043 796.8795833109612 1018.6748601482986 517.572566143763 1018.6748601482986zM754.7281214542927 339.25044954334646c13.752807470184345-13.752807470184345 9.680547595895998-40.186775075214015-9.073280772537204-58.94060344364717l-2.143294670678079-2.1075730928334457c-18.7538283684332-18.7538283684332-45.15207439561819-22.861809820566194-58.90488186580257-9.073280772537204l-168.21291007038468 168.24863164822932-180.42968969324974-180.46541127109438c-13.967136937252159-13.967136937252159-40.72259874288353-9.823433907274534-59.72647815622916 9.216167083915742l-2.143294670678079 2.143294670678079c-19.039600991190277 19.003879413345654-23.111860865478626 45.75934121897699-9.180445506071107 59.655035000539876l180.42968969324974 180.46541127109438-176.07165719620428 176.03593561835962c-13.788529048028984 13.824250625873615-9.716269173740633 40.151053497369375 9.073280772537204 58.94060344364717l2.1075730928334457 2.1075730928334457c18.7538283684332 18.7538283684332 45.15207439561819 22.897531398410823 58.90488186580257 9.073280772537204l176.10737877404887-176.10737877404887 170.39192631890742 170.42764789675192c13.967136937252159 13.931415359407513 40.686877165038865 9.85915548511917 59.690756578384516-9.180445506071107l2.1790162485227142-2.1790162485227142c19.039600991190277-18.968157835501014 23.147582443323273-45.72361964113239 9.180445506071107-59.690756578384516l-170.39192631890742-170.42764789675192L754.7281214542927 339.25044954334646z"></path>
+        </svg>
+    </div>
+</div>
+
+<script type="text/javascript">
+    Util.addScript('https://new.guozhiman.com/js/page.min.js?1717895684726', 'soloPageScript')
+    var page = new Page({
+        "commentContentCannotEmptyLabel": "评论不能为空",
+        "oId": "1717898274512",
+        "blogHost": "https://new.guozhiman.com",
+        "randomArticles1Label": "随机阅读：",
+        "externalRelevantArticles1Label": "站外相关阅读："
+    });
+    $(document).ready(function () {
+        page.load();
+        page.tips.externalRelevantArticlesDisplayCount = "0";
+        page.loadRandomArticles();
+        page.loadRelevantArticles('1717898274512', '<h4>相关阅读：</h4>');
+    });
+</script>
+    </body>
+</html>
+
+<!-- Generated by Latke (https://github.com/88250/latke) in 16ms, 2024/06/09 10:36:17 -->
