@@ -1,0 +1,1 @@
+<?php defined('IN_XQCMS') or exit('Access Denied');class dsession {function dsession() {if(is_dir(XQ_ROOT.'/data/session/')) session_save_path(XQ_ROOT.'/data/session/');session_cache_limiter('private, must-revalidate');session_start();header("cache-control: private");}}?>

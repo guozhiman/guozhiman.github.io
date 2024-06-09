@@ -1,0 +1,48 @@
+{template 'header'}
+<div class="m mid clearfix">
+    <div class="m_l">
+        <div style="width:250px;">
+             <div class="title1"><h2>新闻分类 <em>News classification</em></h2></div>
+              <div class="bboby">
+                <ul>
+             <!--{xqcms:type moduleid=$moduleid&ismenu=1}-->
+              <li class="newslist"><a  
+  href="{$row[url]}">{set_style($row[catname],$row[color])}</a> </li>
+  <!--{/xqcms}-->	
+                </ul>
+            </div>
+ 
+                    <div class="title2"><h2>热点新闻 <em>Hot News</em></h2></div>
+        <div class="bboby">
+                <ul>
+                <!--{xqcms:lists moduleid=$moduleid&condition=status=3&pagesize=6&order=hits desc}-->
+              <li class="newslist"><a  
+  href="{$row[url]}" target="_blank" title="{$row[alt]}">{$row[title]}</a> </li>
+  <!--{/xqcms}-->	
+                </ul>
+            </div>
+              {template 'contact'}
+ 
+    </div> 
+    <!-- s:右1 -->
+    <div class="m_r">
+    <div class="title1"><span class="fr">当前位置: <a href="{XQ_PATH}">首页</a> &gt; {if $catid}{cat_pos($catid, ' &gt; ')}{else} {$MOD[menuname]}{/if}</span><h2>{if $catid}{$CAT[catname]}{else}{$MOD[menuname]}{/if}</h2></div>
+        <!--START:正文-->
+        <div class="catlist">
+           <ul>
+<!--{xqcms:lists moduleid=$moduleid&condition=status=3&catid=$catid&pagesize=$MOD[pagesize]&kw=$kw&page=$page&showpage=1&update=1&order=listorder desc,addtime desc}-->
+{let $i++;}
+<li class="catlist_li">{if $pcatid}<a href="{$row[catlink]}">[{$row[catname]}]</a>{/if} <span class="fr font11">{date('Y-m-d H:i',$row[addtime])}</span><a href="{$row[url]}"target="_blank" title="{$row[alt]}">{$row[title]}</a></li>
+{if $i%5==0}<li class="catlist_sp">&nbsp;</li>{/if}
+<!--{/xqcms}-->		
+</ul>
+{if $pages}<div class="pages">{$pages}</div>{/if} 
+        </div>	
+
+        <!--END:正文-->
+        
+    </div> 
+    <!-- e:右1 -->
+ 
+</div>
+{template 'footer'}
