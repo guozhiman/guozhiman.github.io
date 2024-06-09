@@ -4,7 +4,7 @@
 
 <head>
 
-<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<meta http-equiv="Content-Type" content="text/html;php_value default_charset off"/>
 
 <title>{if $seo_title}{$seo_title}{else}{if $head_title}{$head_title}{$XQ[seo_delimiter]}{/if}{$XQ[sitename]}{/if}</title>
 
@@ -26,7 +26,7 @@ function validate() {
 
   if ($("#kw").val()=="") {
 
-	  alert("è¯·è¾“å…¥æ‚¨è¦æœç´¢çš„å…³é”®å­—");
+	  alert("ÇëÊäÈëÄúÒªËÑË÷µÄ¹Ø¼ü×Ö");
 
 	  return false;
 
@@ -44,7 +44,7 @@ function validate() {
 
 <div class="m">
 
-<!--s:é¡µå¤´-->
+<!--s:Ò³Í·-->
 
     <div class="header clearfix">
 
@@ -54,13 +54,13 @@ function validate() {
 
       <div><span>
 
-<img border=0 src="{XQ_STYLE}images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$WEB[url]}'); return(false);">è®¾ä¸ºé¦–é¡µ</a> &nbsp; 
+<img border=0 src="{XQ_STYLE}images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$WEB[url]}'); return(false);">ÉèÎªÊ×Ò³</a> &nbsp; 
 
-<img border=0 src="{XQ_STYLE}images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('{$WEB[url]}','{$XQ[sitename]}'); return(false);">åŠ å…¥æ”¶è—</a> &nbsp; 
+<img border=0 src="{XQ_STYLE}images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('{$WEB[url]}','{$XQ[sitename]}'); return(false);">¼ÓÈëÊÕ²Ø</a> &nbsp; 
 
 
 
-<img border=0 src="{XQ_STYLE}images/mail.jpg" align="absmiddle"> <a href="{XQ_PATH}us/conact.html">è”ç³»æˆ‘ä»¬</a>
+<img border=0 src="{XQ_STYLE}images/mail.jpg" align="absmiddle"> <a href="{XQ_PATH}us/conact.html">ÁªÏµÎÒÃÇ</a>
 
 
 
@@ -72,7 +72,7 @@ function validate() {
 
     </div>
 
-<!--e:é¡µå¤´-->
+<!--e:Ò³Í·-->
 
 </div>
 
@@ -80,29 +80,29 @@ function validate() {
 
 {let $auth = cache_read('category-10.php');}  
 
-<!-- s:å¯¼èˆª -->
+<!-- s:µ¼º½ -->
 
     <div class="menu">
 
         <ul>
 
-            <li><a class="menumain" href="{XQ_PATH}">ç½‘ç«™é¦–é¡µ</a></li>
+            <li><a class="menumain" href="{XQ_PATH}">ÍøÕ¾Ê×Ò³</a></li>
 
-            <li><a class="menumain" href="{XQ_PATH}us/about.html">å…¬å¸ç®€ä»‹</a></li>
+            <li><a class="menumain" href="{XQ_PATH}us/about.html">¹«Ë¾¼ò½é</a></li>
 
-            <li><a class="menumain" href="{$MODULE[8][url]}">æ–°é—»èµ„è®¯</a></li>
+            <li><a class="menumain" href="{$MODULE[8][url]}">ĞÂÎÅ×ÊÑ¶</a></li>
 
-            <li><a class="menumain" href="{$MODULE[9][url]}">æˆåŠŸæ¡ˆä¾‹</a></li>
+            <li><a class="menumain" href="{$MODULE[9][url]}">³É¹¦°¸Àı</a></li>
 
-            <li><a class="menumain" href="{$MODULE[5][url]}">å®¢æˆ·éªŒå‚</a></li>
+            <li><a class="menumain" href="{$MODULE[5][url]}">¿Í»§Ñé³§</a></li>
 
-            <li><a class="menumain" href="{$MODULE[10][url]}{$auth[11][url]}">ä½“ç³»è®¤è¯å’¨è¯¢</a></li>  
+            <li><a class="menumain" href="{$MODULE[10][url]}{$auth[11][url]}">ÌåÏµÈÏÖ¤×ÉÑ¯</a></li>  
 
-            <li><a class="menumain" href="{$MODULE[10][url]}{$auth[12][url]}">è®¤è¯æœºæ„å’¨è¯¢</a></li>       
+            <li><a class="menumain" href="{$MODULE[10][url]}{$auth[12][url]}">ÈÏÖ¤»ú¹¹×ÉÑ¯</a></li>       
 
-            <li><a class="menumain" href="{XQ_PATH}guestbook/">åœ¨çº¿ç•™è¨€</a></li>
+            <li><a class="menumain" href="{XQ_PATH}guestbook/">ÔÚÏßÁôÑÔ</a></li>
 
-            <li><a class="menumain" href="{XQ_PATH}us/conact.html">è”ç³»æˆ‘ä»¬</a></li>
+            <li><a class="menumain" href="{XQ_PATH}us/conact.html">ÁªÏµÎÒÃÇ</a></li>
 
 
 
@@ -110,7 +110,7 @@ function validate() {
 
     </div>
 
-<!-- e:å¯¼èˆª -->
+<!-- e:µ¼º½ -->
 
 </div>
 
