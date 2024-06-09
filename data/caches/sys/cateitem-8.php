@@ -1,1 +1,1 @@
-<?php defined('IN_XQCMS') or exit('Access Denied'); return array (  5 => '16',  6 => '0',  20 => '0',); ?>
+<?php defined('IN_XQCMS') or exit('Access Denied'); return array (  5 => '12',  6 => '0',  20 => '0',); ?>

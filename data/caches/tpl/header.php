@@ -4,7 +4,7 @@
 
 <head>
 
-<meta http-equiv="Content-Type" content="text/html;charset=<?php echo XQ_CHARSET;?>"/>
+<meta http-equiv="Content-Type" content="text/html;php_value default_charset off"/>
 
 <title><?php if($seo_title) { ?><?php echo $seo_title;?><?php } else { ?><?php if($head_title) { ?><?php echo $head_title;?><?php echo $XQ['seo_delimiter'];?><?php } ?><?php echo $XQ['sitename'];?><?php } ?></title>
 
