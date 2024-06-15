@@ -4,10 +4,9 @@
 
 <head>
 
-<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<meta http-equiv="Content-Type" content="text/html;charset=gbk"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" ã€€ã€€ />
-
+<title>ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾|×¨ÒµÑé³§×ÉÑ¯|ÎÖ¶ûÂêÑé³§|ICTIÈÏÖ¤|BSCIÈÏÖ¤</title>
 
 <meta name="keywords" content="ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾, Ñé³§,Ñé³§×ÉÑ¯,Ñé³§¹«Ë¾,Ñé³§¸¨µ¼,ÎÖ¶ûÂêÑé³§,¹ËÎÊ¹«Ë¾,ÍâÃ³Ñé³§,×ÉÑ¯Ñé³§¹«Ë¾£¬BSCIÈÏÖ¤£¬µÏÊ¿ÄáÑé³§£¬WRAPÈÏÖ¤£¬ICTIÈÏÖ¤£¬·´¿ÖÑé³§£¬SA8000ÈÏÖ¤£¬ÎÖ¶ûÂêÑé³§¹«Ë¾"/>
 
@@ -27,7 +26,7 @@ function validate() {
 
   if ($("#kw").val()=="") {
 
-	  alert("è¯·è¾“å…¥æ‚¨è¦æœç´¢çš„å…³é”®å­—");
+	  alert("ÇëÊäÈëÄúÒªËÑË÷µÄ¹Ø¼ü×Ö");
 
 	  return false;
 
@@ -45,7 +44,7 @@ function validate() {
 
 <div class="m">
 
-<!--s:é¡µå¤´-->
+<!--s:Ò³Í·-->
 
     <div class="header clearfix">
 
@@ -55,13 +54,13 @@ function validate() {
 
       <div><span>
 
-<img border=0 src="/style/default/images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('/'); return(false);">è®¾ä¸ºé¦–é¡µ</a> &nbsp; 
+<img border=0 src="/style/default/images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('/'); return(false);">ÉèÎªÊ×Ò³</a> &nbsp; 
 
-<img border=0 src="/style/default/images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('/','ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾'); return(false);">åŠ å…¥æ”¶è—</a> &nbsp; 
+<img border=0 src="/style/default/images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('/','ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾'); return(false);">¼ÓÈëÊÕ²Ø</a> &nbsp; 
 
 
 
-<img border=0 src="/style/default/images/mail.jpg" align="absmiddle"> <a href="/us/conact.html">è”ç³»æˆ‘ä»¬</a>
+<img border=0 src="/style/default/images/mail.jpg" align="absmiddle"> <a href="/us/conact.html">ÁªÏµÎÒÃÇ</a>
 
 
 
@@ -73,7 +72,7 @@ function validate() {
 
     </div>
 
-<!--e:é¡µå¤´-->
+<!--e:Ò³Í·-->
 
 </div>
 
@@ -81,29 +80,29 @@ function validate() {
 
   
 
-<!-- s:å¯¼èˆª -->
+<!-- s:µ¼º½ -->
 
     <div class="menu">
 
         <ul>
 
-            <li><a class="menumain" href="/">ç½‘ç«™é¦–é¡µ</a></li>
+            <li><a class="menumain" href="/">ÍøÕ¾Ê×Ò³</a></li>
 
-            <li><a class="menumain" href="/us/about.html">å…¬å¸ç®€ä»‹</a></li>
+            <li><a class="menumain" href="/us/about.html">¹«Ë¾¼ò½é</a></li>
 
-            <li><a class="menumain" href="/news/">æ–°é—»èµ„è®¯</a></li>
+            <li><a class="menumain" href="/news/">ÐÂÎÅ×ÊÑ¶</a></li>
 
-            <li><a class="menumain" href="/cases/">æˆåŠŸæ¡ˆä¾‹</a></li>
+            <li><a class="menumain" href="/cases/">³É¹¦°¸Àý</a></li>
 
-            <li><a class="menumain" href="/factory/">å®¢æˆ·éªŒåŽ‚</a></li>
+            <li><a class="menumain" href="/factory/">¿Í»§Ñé³§</a></li>
 
-            <li><a class="menumain" href="/auth/auth_11.html">ä½“ç³»è®¤è¯å’¨è¯¢</a></li>  
+            <li><a class="menumain" href="/auth/auth_11.html">ÌåÏµÈÏÖ¤×ÉÑ¯</a></li>  
 
-            <li><a class="menumain" href="/auth/auth_12.html">è®¤è¯æœºæž„å’¨è¯¢</a></li>       
+            <li><a class="menumain" href="/auth/auth_12.html">ÈÏÖ¤»ú¹¹×ÉÑ¯</a></li>       
 
-            <li><a class="menumain" href="/guestbook/">åœ¨çº¿ç•™è¨€</a></li>
+            <li><a class="menumain" href="/guestbook/">ÔÚÏßÁôÑÔ</a></li>
 
-            <li><a class="menumain" href="/us/conact.html">è”ç³»æˆ‘ä»¬</a></li>
+            <li><a class="menumain" href="/us/conact.html">ÁªÏµÎÒÃÇ</a></li>
 
 
 
@@ -111,7 +110,7 @@ function validate() {
 
     </div>
 
-<!-- e:å¯¼èˆª -->
+<!-- e:µ¼º½ -->
 
 </div>
 
@@ -166,7 +165,7 @@ function validate() {
 
         <div style="width:250px;">
 
-        <div class="title1"><span class="fr more"><a href="/cases/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>æˆåŠŸæ¡ˆä¾‹ <em>Success Stories</em></h2></div>
+        <div class="title1"><span class="fr more"><a href="/cases/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>³É¹¦°¸Àý <em>Success Stories</em></h2></div>
 
         <div class="bboby" style="height:172px;overflow:hidden;" id="marquee">
 
@@ -286,7 +285,7 @@ function validate() {
 
 
 
-              <div class="title2"><span class="fr more"><a href="/cases/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>æ¡ˆä¾‹åˆ†ç±» <em>Case classification</em></h2></div>
+              <div class="title2"><span class="fr more"><a href="/cases/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>°¸Àý·ÖÀà <em>Case classification</em></h2></div>
 
               <div class="bboby">
 
@@ -332,16 +331,16 @@ function validate() {
 
 
 
-                 <div class="title2"><span class="fr more"><a href="/us/conact.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>è”ç³»æ–¹å¼ <em>Contact us</em></h2></div>
+                 <div class="title2"><span class="fr more"><a href="/us/conact.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>ÁªÏµ·½Ê½ <em>Contact us</em></h2></div>
     <div class="bboby" style="padding-right:0px;">
-    <!--p>è”ç³»äººï¼š¸µÏÈÉú</p-->
-    <p>ç”µè¯ï¼š021-57781112</p>
-    <!--p>æ‰‹æœºï¼š18018549899</p-->
-    <p>ä¼ çœŸï¼š021-57881006</p>
-    <!--p>QQï¼š361459714</p-->
-    <p>é‚®ç®±ï¼šfurt@sruis.com</p>
-     <p>ç½‘å€ï¼šhttp://localhost</p>
-<p></p>
+    <!--p>ÁªÏµÈË£º¸µÏÈÉú</p-->
+    <p>µç»°£º021-57781112</p>
+    <!--p>ÊÖ»ú£º18018549899</p-->
+    <p>´«Õæ£º021-57881006</p>
+    <!--p>QQ£º361459714</p-->
+    <p>ÓÊÏä£ºfurt@sruis.com</p>
+     <p>ÍøÖ·£ºhttp://localhost</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
    
     </div>
 </div>
@@ -350,18 +349,18 @@ function validate() {
 
     </div> 
 
-    <!-- s:å³1 -->
+    <!-- s:ÓÒ1 -->
 
     <div class="m_r">
 
      
-    <div class="title1"><span class="fr more"><a href="/us/about.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>å…¬å¸ç®€ä»‹ <em>Company Profile</em></h2></div>
+    <div class="title1"><span class="fr more"><a href="/us/about.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>¹«Ë¾¼ò½é <em>Company Profile</em></h2></div>
 
     <div class="bboby">
 
     <p>
 
-      <img src="/style/default/images/about.gif" style="padding-right:10px;" align="left"/>  &nbsp;&nbsp;&nbsp;&nbsp;ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾,ÊÇ¹úÄÚ×îÔçÄ¿Ç°´ÓÊÂCOC¼°ÔÙÉú×ÊÔ´Ñé³§ÈÏÖ¤¸¨µ¼µÄ¹«Ë¾£¬·þÎñÑé³§ÏîÄ¿ÓÐICTI¡¢BSCI¡¢SEDEX¡¢WRAP¡¢AVE¡¢C-TPAT¡¢SA8000¡¢RBA¡¢IS09001¡¢IS014001¡¢OHSAS18001¡¢IATF16949£¬GRS¡¢RWS¡¢GOTS¡¢RMS¡¢OCSµÈ¡£ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾×Ô³ÉÁ¢ÒÔÀ´Ò»Ö±ÖÂÁ¦ÓÚÎªÖÐ¹úÍâÃ³¼Ó¹¤ÆóÒµÌá¹©È«·½Î»Ñé³§½â¾ö·½°¸£¬ÖúÁ¦ÆóÒµÌáÉý¹ú¼Ê¾ºÕùÁ¦,ÔÚÑé³§×ÉÑ¯·½¶ø»ýÀÛÁË·á¸»µÄ¾­Ñé¡£Ê¦Èñ¹«Ë¾µÄ¹ËÎÊÍÅ¶ÓÒÑ³É¹¦¸¨µ¼ÉÏÇ§¼ÒÆóÒµÍ¨¹ý¸÷ÖÖÉóºË,¿Í»§±é¼°È«¹ú¸÷µØ¼°¶«ÄÏÑÇµØÇø¡£Éæ¼°ÐÐÒµ°üÀ¨:·ÄÖ¯¡¢·þ×°¡¢·þÊÎ¡¢¼Ò·Ä¡¢Ïä°ü¡¢Ð¬Òµ¡¢Æ¤¾ß¡¢Íæ¾ß¡¢ÀñÆ·¡¢Ö½Æ·¡¢Ä¾ÖÆÆ·¡¢Ê³Æ·¡¢ÌÕ´É¼°ËÜ½ºÖÆÆ·¡¢¹¤ÒÕÆ·¡¢Ä£¾ß¡¢²»Ðâ¸Ö¡¢Îå½ð¡¢µç×Ó¡¢µçÆ÷¡¢ÏßÂ·°å¡¢Ó¡Ë¢...<a href="/us/about.html" target="_blank" style="color:#ff0000">[è¯¦ç»†ä»‹ç»]</a> 
+      <img src="/style/default/images/about.gif" style="padding-right:10px;" align="left"/>  &nbsp;&nbsp;&nbsp;&nbsp;ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾,ÊÇ¹úÄÚ×îÔçÄ¿Ç°´ÓÊÂCOC¼°ÔÙÉú×ÊÔ´Ñé³§ÈÏÖ¤¸¨µ¼µÄ¹«Ë¾£¬·þÎñÑé³§ÏîÄ¿ÓÐICTI¡¢BSCI¡¢SEDEX¡¢WRAP¡¢AVE¡¢C-TPAT¡¢SA8000¡¢RBA¡¢IS09001¡¢IS014001¡¢OHSAS18001¡¢IATF16949£¬GRS¡¢RWS¡¢GOTS¡¢RMS¡¢OCSµÈ¡£ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾×Ô³ÉÁ¢ÒÔÀ´Ò»Ö±ÖÂÁ¦ÓÚÎªÖÐ¹úÍâÃ³¼Ó¹¤ÆóÒµÌá¹©È«·½Î»Ñé³§½â¾ö·½°¸£¬ÖúÁ¦ÆóÒµÌáÉý¹ú¼Ê¾ºÕùÁ¦,ÔÚÑé³§×ÉÑ¯·½¶ø»ýÀÛÁË·á¸»µÄ¾­Ñé¡£Ê¦Èñ¹«Ë¾µÄ¹ËÎÊÍÅ¶ÓÒÑ³É¹¦¸¨µ¼ÉÏÇ§¼ÒÆóÒµÍ¨¹ý¸÷ÖÖÉóºË,¿Í»§±é¼°È«¹ú¸÷µØ¼°¶«ÄÏÑÇµØÇø¡£Éæ¼°ÐÐÒµ°üÀ¨:·ÄÖ¯¡¢·þ×°¡¢·þÊÎ¡¢¼Ò·Ä¡¢Ïä°ü¡¢Ð¬Òµ¡¢Æ¤¾ß¡¢Íæ¾ß¡¢ÀñÆ·¡¢Ö½Æ·¡¢Ä¾ÖÆÆ·¡¢Ê³Æ·¡¢ÌÕ´É¼°ËÜ½ºÖÆÆ·¡¢¹¤ÒÕÆ·¡¢Ä£¾ß¡¢²»Ðâ¸Ö¡¢Îå½ð¡¢µç×Ó¡¢µçÆ÷¡¢ÏßÂ·°å¡¢Ó¡Ë¢...<a href="/us/about.html" target="_blank" style="color:#ff0000">[ÏêÏ¸½éÉÜ]</a> 
 
       </p> 
 
@@ -372,7 +371,7 @@ function validate() {
     
       <div class="m_1_l">
 
-             <div class="title2"><span class="fr more"><a href="/news/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>æ–°é—»èµ„è®¯ <em>News</em></h2></div>
+             <div class="title2"><span class="fr more"><a href="/news/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>ÐÂÎÅ×ÊÑ¶ <em>News</em></h2></div>
 
           <div class="bboby">
 
@@ -408,31 +407,6 @@ function validate() {
 
   href="/news/news6.htm" target="_blank" title="²É¹ºÉÌÎÖ¶ûÂê½éÉÜ">²É¹ºÉÌÎÖ¶ûÂê½éÉÜ</a> </li>
 
-  
-              <li class="newslist"><span class="fr">08/14</span> <a  
-
-  href="/news/news5.htm" target="_blank" title="ÎÖ¶ûÂê²ÉÄÉICTI">ÎÖ¶ûÂê²ÉÄÉICTI</a> </li>
-
-  
-              <li class="newslist"><span class="fr">08/14</span> <a  
-
-  href="/news/news4.htm" target="_blank" title="RoHS ÈÏÖ¤¼ò½é">RoHS ÈÏÖ¤¼ò½é</a> </li>
-
-  
-              <li class="newslist"><span class="fr">08/14</span> <a  
-
-  href="/news/news3.htm" target="_blank" title="ÎÖ¶ûÂêÈÙµÇ¡¶²Æ¸»¡·È«ÃÀ500Ç¿ÅÅÐÐ°ñÊ×Î»">ÎÖ¶ûÂêÈÙµÇ¡¶²Æ¸»¡·È«ÃÀ500Ç¿ÅÅÐÐ°ñÊ×Î»</a> </li>
-
-  
-              <li class="newslist"><span class="fr">08/14</span> <a  
-
-  href="/news/news2.htm" target="_blank" title="WRAPÈÏÖ¤ÏîÄ¿¼ò½é">WRAPÈÏÖ¤ÏîÄ¿¼ò½é</a> </li>
-
-  
-              <li class="newslist"><span class="fr">08/14</span> <a  
-
-  href="/news/news1.htm" target="_blank" title="C-TPATÊ×ÅúµÚÈý·½ÉóºË»ú¹¹×îÖÕÉ¸Ñ¡½á¹û¹«²¼">C-TPATÊ×ÅúµÚÈý·½ÉóºË»ú¹¹×îÖÕÉ¸Ñ¡½á¹û¹«²¼</a> </li>
-
   	
 
                 </ul>
@@ -445,7 +419,7 @@ function validate() {
 
         <div class="m_1_r">
 
-            <div class="title2"><span class="fr more"><a href="/factory/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>å®¢æˆ·éªŒåŽ‚ <em>Customer audits</em></h2></div>
+            <div class="title2"><span class="fr more"><a href="/factory/"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>¿Í»§Ñé³§ <em>Customer audits</em></h2></div>
 
             <div class="bboby">
 
@@ -481,51 +455,6 @@ function validate() {
 
   href="/factory/factory273.htm" target="_blank" title="PVH²éÔ±¹¤·ÃÌ¸ÎÊ¾í">PVH²éÔ±¹¤·ÃÌ¸ÎÊ¾í</a> </li>
 
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory272.htm" target="_blank" title="PVHÑé³§¹¤×Ê·½ÃæµÄÉóºË">PVHÑé³§¹¤×Ê·½ÃæµÄÉóºË</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory271.htm" target="_blank" title="PVH·´¿ÖÑé³§ÅàÑµ">PVH·´¿ÖÑé³§ÅàÑµ</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory270.htm" target="_blank" title="PVHÎÄ¼þÇåµ¥">PVHÎÄ¼þÇåµ¥</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory269.htm" target="_blank" title="PVHÑé³§±ê×¼">PVHÑé³§±ê×¼</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory268.htm" target="_blank" title="FCCAÑé³§×ÊÁÏ">FCCAÑé³§×ÊÁÏ</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory267.htm" target="_blank" title="×î×¨ÒµµÄFCCAÑé³§×ÉÑ¯·þÎñ">×î×¨ÒµµÄFCCAÑé³§×ÉÑ¯·þÎñ</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory266.htm" target="_blank" title="Wal-Mart FCCAÑé³§µÄºÃ´¦">Wal-Mart FCCAÑé³§µÄºÃ´¦</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory265.htm" target="_blank" title="FCCAÑé³§±ê×¼">FCCAÑé³§±ê×¼</a> </li>
-
-  
-                  <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/factory/factory264.htm" target="_blank" title="FCCAÑé³§¼ò½é">FCCAÑé³§¼ò½é</a> </li>
-
   	
 
                 </ul>
@@ -538,7 +467,7 @@ function validate() {
 
               <div class="m_1_l mt10">
 
-             <div class="title2"><span class="fr more"><a href="/auth/auth_11.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>ä½“ç³»è®¤è¯å’¨è¯¢ <em>System certification</em></h2></div>
+             <div class="title2"><span class="fr more"><a href="/auth/auth_11.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>ÌåÏµÈÏÖ¤×ÉÑ¯ <em>System certification</em></h2></div>
 
           <div class="bboby">
 
@@ -574,51 +503,6 @@ function validate() {
 
   href="/auth/auth97.htm" target="_blank" title="FSCÉ­ÁÖ¹ÜÀíÔ­ÔòÓë±ê×¼">FSCÉ­ÁÖ¹ÜÀíÔ­ÔòÓë±ê×¼</a> </li>
 
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth96.htm" target="_blank" title="Oeko-Tex Standard 100Àà±ð»®·Ö">Oeko-Tex Standard 100Àà±ð»®·Ö</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth95.htm" target="_blank" title="2008°æOeko-Tex Standard100 ±ê×¼ÐÞ¶©½â¶Á">2008°æOeko-Tex Standard100 ±ê×¼ÐÞ¶©½â¶Á</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth94.htm" target="_blank" title="Oeko-TexÉúÌ¬·ÄÖ¯Æ·ÈÏÖ¤µÄ»ù±¾ÀíÄî">Oeko-TexÉúÌ¬·ÄÖ¯Æ·ÈÏÖ¤µÄ»ù±¾ÀíÄî</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth93.htm" target="_blank" title="Oeko-Tex Standard 100ÉúÌ¬ÈÏÖ¤ÎüÒýÅ·ÃÀÂò¼ÒÂäµ¥ÖÐ¹ú">Oeko-Tex Standard 100ÉúÌ¬ÈÏÖ¤ÎüÒýÅ·ÃÀÂò¼ÒÂäµ¥ÖÐ¹ú</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth92.htm" target="_blank" title="Ö²ÎïÈ¾É«¸øÓÐ»úÃÞ²úÒµ²åÉÏ³á°ò">Ö²ÎïÈ¾É«¸øÓÐ»úÃÞ²úÒµ²åÉÏ³á°ò</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth91.htm" target="_blank" title="ÈÕÃÀÓ¢µÂËÄ¹úÌ½ÌÖÓÐ»úÃÞ¹ú¼ÊÈÏÖ¤±ê×¼">ÈÕÃÀÓ¢µÂËÄ¹úÌ½ÌÖÓÐ»úÃÞ¹ú¼ÊÈÏÖ¤±ê×¼</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth90.htm" target="_blank" title="¹úÄÚÍâÓÐ»ú²úÆ·ÈÏÖ¤»ú¹¹">¹úÄÚÍâÓÐ»ú²úÆ·ÈÏÖ¤»ú¹¹</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth89.htm" target="_blank" title="ÈÏÖ¤»ú¹¹">ÈÏÖ¤»ú¹¹</a> </li>
-
-  
-                <li class="newslist"><span class="fr">08/21</span> <a  
-
-  href="/auth/auth88.htm" target="_blank" title="FLAÖ°Òµ°²È«½¡¿µÎÊÌâ">FLAÖ°Òµ°²È«½¡¿µÎÊÌâ</a> </li>
-
   	
 
                 </ul>
@@ -631,7 +515,7 @@ function validate() {
 
         <div class="m_1_r mt10">
 
-            <div class="title2"><span class="fr more"><a href="/auth/auth_12.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>è®¤è¯æœºæž„å’¨è¯¢ <em>Certification bodies</em></h2></div>
+            <div class="title2"><span class="fr more"><a href="/auth/auth_12.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>ÈÏÖ¤»ú¹¹×ÉÑ¯ <em>Certification bodies</em></h2></div>
 
             <div class="bboby">
 
@@ -667,51 +551,6 @@ function validate() {
 
   href="/auth/auth63.htm" target="_blank" title="Intertek-ÌìÏé-ITS¹«Ö¤ÐÐ">Intertek-ÌìÏé-ITS¹«Ö¤ÐÐ</a> </li>
 
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth62.htm" target="_blank" title="SGS---SGS¹«Ö¤ÐÐ¼ò½é">SGS---SGS¹«Ö¤ÐÐ¼ò½é</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth61.htm" target="_blank" title="HKQAA-Ïã¸ÛÆ·ÖÊ±£Ö¤¾Ö">HKQAA-Ïã¸ÛÆ·ÖÊ±£Ö¤¾Ö</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth60.htm" target="_blank" title="BVC---·¨¹ú¹ú¼Ê¼ìÑé¾Ö">BVC---·¨¹ú¹ú¼Ê¼ìÑé¾Ö</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth59.htm" target="_blank" title="STRÉÏº£Ê¤°îÖÊÁ¿¼ì²âÓÐÏÞ¹«Ë¾ÉîÛÚ·Ö¹«Ë¾">STRÉÏº£Ê¤°îÖÊÁ¿¼ì²âÓÐÏÞ¹«Ë¾ÉîÛÚ·Ö¹«Ë¾</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth58.htm" target="_blank" title="Å·ÃË¼¼Êõ»ú¹¹ ·¨¹úCTCÐ¬ÒµÆ¤¸ï¼¼ÊõÖÐÐÄ">Å·ÃË¼¼Êõ»ú¹¹ ·¨¹úCTCÐ¬ÒµÆ¤¸ï¼¼ÊõÖÐÐÄ</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth57.htm" target="_blank" title="DNV ---Å²Íþ´¬¼¶ÉçÈÏÖ¤·þÎñ">DNV ---Å²Íþ´¬¼¶ÉçÈÏÖ¤·þÎñ</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth56.htm" target="_blank" title="Òâ´óÀû´¬¼¶Éç£¨RINA£©½éÉÜ">Òâ´óÀû´¬¼¶Éç£¨RINA£©½éÉÜ</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth55.htm" target="_blank" title="BV---·¨¹ú¹ú¼Ê¼ìÑé¾Ö¹«Ö¤ÐÐ¼ò½é">BV---·¨¹ú¹ú¼Ê¼ìÑé¾Ö¹«Ö¤ÐÐ¼ò½é</a> </li>
-
-  
-                   <li class="newslist"><span class="fr">08/20</span> <a  
-
-  href="/auth/auth54.htm" target="_blank" title="TUV---µÂ¹úÀ³Òð">TUV---µÂ¹úÀ³Òð</a> </li>
-
   	
 
                 </ul>
@@ -726,7 +565,7 @@ function validate() {
 
     </div> 
 
-    <!-- e:å³1 -->
+    <!-- e:ÓÒ1 -->
 
 
 
@@ -822,9 +661,9 @@ Marquee,speed)}
 
 <p>
 
-<a href="/">ç½‘ç«™é¦–é¡µ</a> | 
+<a href="/">ÍøÕ¾Ê×Ò³</a> | 
 
-		<a href="/us/about.html">å…¬å¸ç®€ä»‹</a> | <a href="/news/">æ–°é—»èµ„è®¯</a> | <a href="/cases/">æˆåŠŸæ¡ˆä¾‹</a> |   <a href="/factory/">å®¢æˆ·éªŒåŽ‚</a> |  <a href="/auth/auth_11.html">ä½“ç³»è®¤è¯å’¨è¯¢</a> |  <a href="/auth/auth_12.html">è®¤è¯æœºæž„å’¨è¯¢</a> | <a href="/guestbook/">ç½‘ç«™ç•™è¨€</a> |  <a href="/us/conact.html">è”ç³»æˆ‘ä»¬</a>   
+		<a href="/us/about.html">¹«Ë¾¼ò½é</a> | <a href="/news/">ÐÂÎÅ×ÊÑ¶</a> | <a href="/cases/">³É¹¦°¸Àý</a> |   <a href="/factory/">¿Í»§Ñé³§</a> |  <a href="/auth/auth_11.html">ÌåÏµÈÏÖ¤×ÉÑ¯</a> |  <a href="/auth/auth_12.html">ÈÏÖ¤»ú¹¹×ÉÑ¯</a> | <a href="/guestbook/">ÍøÕ¾ÁôÑÔ</a> |  <a href="/us/conact.html">ÁªÏµÎÒÃÇ</a>   
 
        
 
@@ -836,7 +675,7 @@ Marquee,speed)}
 
         Copyright &#169; 2008-2012  <a href="http://www.sruis.com">ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓÐÏÞ¹«Ë¾</a> °æÈ¨ËùÓÐ  
 
-          å¤‡æ¡ˆï¼š<a href="http://www.miibeian.gov.cn" target="_blank">»¦ICP±¸12042867ºÅ-1</a> 
+          ±¸°¸£º<a href="http://www.miibeian.gov.cn" target="_blank">»¦ICP±¸12042867ºÅ-1</a> 
          </p>
 
         <p>
