@@ -1,5 +1,0 @@
-<?php
-$names = array (
-  'default' => 'Ä¬ÈÏÄ£°å',
-);
-?>
