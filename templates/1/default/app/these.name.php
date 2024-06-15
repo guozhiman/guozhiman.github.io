@@ -1,0 +1,8 @@
+<?php
+$names = array (
+  'link' => 'ÓÑÇéÁ´½Ó',
+  'sitemap' => 'ÍøÕ¾µØÍ¼',
+  'guestbook' => 'ÁôÑÔ±¾',
+  'onepage' => 'µ¥ÍøÒ³',
+);
+?>

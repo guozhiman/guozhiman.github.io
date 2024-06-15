@@ -1,0 +1,31 @@
+{template 'header'}
+<div class="m mid clearfix">
+    <div class="m_l">
+        <div style="width:250px;">
+            <div class="title1"><h2>体系认证 <em>System certification</em></h2></div>
+              <div class="bboby">
+                <ul>
+             <!--{xqcms:type moduleid=10&catid=11&ismenu=1}-->
+              <li class="newslist"><a  
+  href="{$MODULE[10][url]}{$row[url]}">{set_style($row[catname],$row[color])}</a> </li>
+  <!--{/xqcms}-->	
+                </ul>
+            </div>
+              {template 'contact'}
+ 
+    </div> 
+    <!-- s:右1 -->
+    <div class="m_r">
+        <div class="title1"><span class="fr">当前位置: <a href="{XQ_PATH}">首页</a> &gt; {$title}</span><h2>{$title}</h2></div>
+        <!--START:内容正文-->
+        <div class="content-detail">
+        {$content}
+        </div>	
+
+        <!--END:内容正文-->
+        
+    </div> 
+    <!-- e:右1 -->
+ 
+</div>
+{template 'footer'}
