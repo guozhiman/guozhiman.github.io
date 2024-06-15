@@ -1,0 +1,55 @@
+{template 'header'}
+<div class="m mid clearfix">
+    <div class="m_l">
+        <div style="width:250px;">
+             <div class="title1"><h2>热门点击 <em>Top Hits</em></h2></div>
+              <div class="bboby">
+                <ul>
+             <!--{xqcms:lists moduleid=$moduleid&condition=status=3&pagesize=15&order=hits desc}-->
+              <li class="newslist"><a  
+  href="{$row[url]}" target="_blank" title="{$row[alt]}">{$row[title]}</a> </li>
+  <!--{/xqcms}-->	
+                </ul>
+            </div>
+              {template 'contact'}
+ 
+    </div> 
+    <!-- s:右1 -->
+    <div class="m_r">
+        <div class="title1"><span class="fr">当前位置: <a href="{XQ_PATH}">首页</a> &gt;{cat_pos($catid, ' &gt; ')} &gt; 案例详情</span><h2>案例详情</h2></div>
+              <!--START:内容正文-->
+<div class="content-detail">
+<h1>{$title}</h1>
+<div class="info">
+<span>发布日期：{date('Y-m-d H:i',$addtime)}
+		点击：<font color="red" id="hits">{$hits}</font> 次</span>
+
+</div>
+
+  {$content}
+
+
+<!--分页--> 
+{if $pages}<div class="pages">{$pages}</div>{/if}
+<div class="catlist_sp">&nbsp;</div>
+
+
+		<div style="padding-top:10px;">
+		<ul>
+		<li><strong>上一个：</strong> <!--{xqcms:lists moduleid=$moduleid&condition=status=3 and id<$id&pagesize=1&order=id desc}--> 
+        <a href="{$row[url]}" target="_blank" title="{$row[alt]}">{$row[alt]}</a> 
+        <!--{/xqcms}--></li>
+		<li><strong>下一个：</strong><!--{xqcms:lists moduleid=$moduleid&condition=status=3 and id>$id&pagesize=1&order=id asc}--> 
+        <a href="{$row[url]}" target="_blank" title="{$row[alt]}">{$row[alt]}</a> 
+        <!--{/xqcms}--> </li>
+        </ul>
+		</div>
+       
+</div>
+<!--END:内容正文-->
+        
+    </div> 
+    <!-- e:右1 -->
+ 
+</div>
+{template 'footer'}

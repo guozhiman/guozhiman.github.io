@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" ã€€ã€€ />
+
+
+<meta name="keywords" content="£¨ÂêÉ¯Ñé³§£©µÀµÂ³ĞÅµ×ÔÖúÖ¸ÄÏ£¨ËÄ£©"/>
+
+<meta name="description" content="3b. ½¡¿µºÍ°²È«ÏÖÔÚ£¬Çë¼¯ÖĞ¿¼²ì»úÆ÷°²È«¡£Óë¸ºÔğ»úÆ÷°²È«µÄ¾­ÀíÒ»ÆğÑ²ÊÓ¹¤³§¡£²é¿´ÄãµÄËùÓĞ»úÆ÷ºÍ¹¤³§»·¾³£¬ÎŞÂÛËüÃÇ¿´ÉÏÈ¥¶àÃ´"/>
+
+<link rel="stylesheet" type="text/css" href="/style/default/style.css"/>
+
+<script type="text/javascript" src="/data/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="/data/js/config.js"></script>
+
+<script type="text/javascript" src="/data/js/xqcms.js"></script>
+
+<script language="JavaScript">
+
+function validate() {
+
+  if ($("#kw").val()=="") {
+
+	  alert("è¯·è¾“å…¥æ‚¨è¦æœç´¢çš„å…³é”®å­—");
+
+	  return false;
+
+  }
+
+  return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="m">
+
+<!--s:é¡µå¤´-->
+
+    <div class="header clearfix">
+
+      <div class="logo"><a href="/"><img src="http://www.sruis.com/upfiles/201209/14/2012091416395432.jpg" alt="ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓĞÏŞ¹«Ë¾" /></a></div> 
+
+      <div class="logor">
+
+      <div><span>
+
+<img border=0 src="/style/default/images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost/'); return(false);">è®¾ä¸ºé¦–é¡µ</a> &nbsp; 
+
+<img border=0 src="/style/default/images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('http://localhost/','ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓĞÏŞ¹«Ë¾'); return(false);">åŠ å…¥æ”¶è—</a> &nbsp; 
+
+
+
+<img border=0 src="/style/default/images/mail.jpg" align="absmiddle"> <a href="/us/conact.html">è”ç³»æˆ‘ä»¬</a>
+
+
+
+</span></div>
+
+ 
+
+      </div>
+
+    </div>
+
+<!--e:é¡µå¤´-->
+
+</div>
+
+<div class="m">
+
+  
+
+<!-- s:å¯¼èˆª -->
+
+    <div class="menu">
+
+        <ul>
+
+            <li><a class="menumain" href="/">ç½‘ç«™é¦–é¡µ</a></li>
+
+            <li><a class="menumain" href="/us/about.html">å…¬å¸ç®€ä»‹</a></li>
+
+            <li><a class="menumain" href="/news/">æ–°é—»èµ„è®¯</a></li>
+
+            <li><a class="menumain" href="/cases/">æˆåŠŸæ¡ˆä¾‹</a></li>
+
+            <li><a class="menumain" href="/factory/">å®¢æˆ·éªŒå‚</a></li>
+
+            <li><a class="menumain" href="/auth/auth_11.html">ä½“ç³»è®¤è¯å’¨è¯¢</a></li>  
+
+            <li><a class="menumain" href="/auth/auth_12.html">è®¤è¯æœºæ„å’¨è¯¢</a></li>       
+
+            <li><a class="menumain" href="/guestbook/">åœ¨çº¿ç•™è¨€</a></li>
+
+            <li><a class="menumain" href="/us/conact.html">è”ç³»æˆ‘ä»¬</a></li>
+
+
+
+        </ul>
+
+    </div>
+
+<!-- e:å¯¼èˆª -->
+
+</div>
+
+<div class="m">
+
+<style type="text/css">
+	*{margin:0;padding:0;list-style-type:none;}
+	a,img{border:0;}
+	/* flexslider */
+	.flexslider{position:relative;height:250px;overflow:hidden;background:url(/templates/default/images/loading.gif) 50% no-repeat;}
+	.slides{position:relative;z-index:1;}
+	.slides li{height:400px;}
+	.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+	.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+	.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(images/dot.png) right 0 no-repeat;cursor:pointer;}
+	.flex-control-nav .flex-active{background-position:0 0;}
+
+	.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+	.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+	.flex-direction-nav li a.flex-prev{left:40px;background:url(images/prev.png) center center no-repeat;}
+	.flex-direction-nav li a.flex-next{right:40px;background:url(images/next.png) center center no-repeat;}
+</style>
+
+</head>
+<body>
+<div class="flexslider">
+	<ul class="slides">
+		<li style="background:url(/templates/default/images/img1.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(/templates/default/images/img2.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(/templates/default/images/img3.jpg) 50% 0 no-repeat;"></li>
+		
+
+	</ul>
+</div>
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/templates/default/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.flexslider').flexslider({
+			directionNav: true,
+			pauseOnAction: false
+		});
+	});
+</script>
+
+
+</div><div class="m mid clearfix">
+    <div class="m_l">
+        <div style="width:250px;">
+             <div class="title1"><h2>ÈÈÃÅµã»÷ <em>Top Hits</em></h2></div>
+              <div class="bboby">
+                <ul>
+                           <li class="newslist"><a  
+  href="/factory/factory281.htm" target="_blank" title="BSCI×îĞÂ³ÉÔ±ÁĞ±í">BSCI×îĞÂ³ÉÔ±ÁĞ±í</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory165.htm" target="_blank" title="ÎÖ¶ûÂêÑé³§&quot;Ôì¼Ù´óÏ·&quot;">ÎÖ¶ûÂêÑé³§&quot;Ôì¼Ù´óÏ·&quot;</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory286.htm" target="_blank" title="Ó¢·ş×°ÁãÊÛÉÌAsda, Primark and Tesco º£Íâ¡°Ñªº¹¹¤³§¡±±»ÆØ¹â">Ó¢·ş×°ÁãÊÛÉÌAsda, Primark and Tesco º£Íâ¡°Ñªº¹¹¤³§¡±±»ÆØ¹â</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory253.htm" target="_blank" title="Bon-tonÈÏÖ¤¸ß·çÏÕÎ¥¹æÄÚÈİ">Bon-tonÈÏÖ¤¸ß·çÏÕÎ¥¹æÄÚÈİ</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory269.htm" target="_blank" title="PVHÑé³§±ê×¼">PVHÑé³§±ê×¼</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory287.htm" target="_blank" title="BSCIÈÏÖ¤Ñé³§×ÉÑ¯½éÉÜ">BSCIÈÏÖ¤Ñé³§×ÉÑ¯½éÉÜ</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory265.htm" target="_blank" title="FCCAÑé³§±ê×¼">FCCAÑé³§±ê×¼</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory268.htm" target="_blank" title="FCCAÑé³§×ÊÁÏ">FCCAÑé³§×ÊÁÏ</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory71.htm" target="_blank" title="Lowe's QMSÖÊÁ¿ÌåÏµÆÀ¹À±í£¨Ò»£©">Lowe's QMSÖÊÁ¿ÌåÏµÆÀ¹À±í£¨Ò»£©</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory140.htm" target="_blank" title="2012ÎÖ¶ûÂêSCSÑé³§Çåµ¥">2012ÎÖ¶ûÂêSCSÑé³§Çåµ¥</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory272.htm" target="_blank" title="PVHÑé³§¹¤×Ê·½ÃæµÄÉóºË">PVHÑé³§¹¤×Ê·½ÃæµÄÉóºË</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory270.htm" target="_blank" title="PVHÎÄ¼şÇåµ¥">PVHÎÄ¼şÇåµ¥</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory273.htm" target="_blank" title="PVH²éÔ±¹¤·ÃÌ¸ÎÊ¾í">PVH²éÔ±¹¤·ÃÌ¸ÎÊ¾í</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory285.htm" target="_blank" title="Target È«Çò×ñÔ¼(ÈËÈ¨)Ñé³§³ÌĞò"><span style="color:#000000">Target È«Çò×ñÔ¼(ÈËÈ¨)Ñé³§³ÌĞò</span></a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory271.htm" target="_blank" title="PVH·´¿ÖÑé³§ÅàÑµ">PVH·´¿ÖÑé³§ÅàÑµ</a> </li>
+  	
+                </ul>
+            </div>
+                 <div class="title2"><span class="fr more"><a href="/us/conact.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>è”ç³»æ–¹å¼ <em>Contact us</em></h2></div>
+    <div class="bboby" style="padding-right:0px;">
+    <!--p>è”ç³»äººï¼š¸µÏÈÉú</p-->
+    <p>ç”µè¯ï¼š021-57781112</p>
+    <!--p>æ‰‹æœºï¼š18018549899</p-->
+    <p>ä¼ çœŸï¼š021-57881006</p>
+    <!--p>QQï¼š361459714</p-->
+    <p>é‚®ç®±ï¼šfurt@sruis.com</p>
+     <p>ç½‘å€ï¼šhttp://localhost</p>
+<p></p>
+   
+    </div>
+</div>
+<div class="left_b_bg"></div> 
+    </div> 
+    <!-- s:ÓÒ1 -->
+    <div class="m_r">
+        <div class="title1"><span class="fr">µ±Ç°Î»ÖÃ: <a href="/">Ê×Ò³</a> &gt;<a href="/factory/factory_123.html">ÂêÉ¯Ñé³§×ÉÑ¯×¨Ìâ</a> &gt; °¸ÀıÏêÇé</span><h2>°¸ÀıÏêÇé</h2></div>
+              <!--START:ÄÚÈİÕıÎÄ-->
+<div class="content-detail">
+<h1>£¨ÂêÉ¯Ñé³§£©µÀµÂ³ĞÅµ×ÔÖúÖ¸ÄÏ£¨ËÄ£©</h1>
+<div class="info">
+<span>·¢²¼ÈÕÆÚ£º2012-08-21 14:12		µã»÷£º<font color="red" id="hits">74</font> ´Î</span>
+
+</div>
+
+  &nbsp;3b. ½¡¿µºÍ°²È«
+<div class="dashednew">&nbsp;</div>
+<div class="detail_ct">
+<p>ÏÖÔÚ£¬Çë¼¯ÖĞ¿¼²ì»úÆ÷°²È«¡£</p>
+<p>Óë¸ºÔğ»úÆ÷°²È«µÄ¾­ÀíÒ»ÆğÑ²ÊÓ¹¤³§¡£²é¿´ÄãµÄËùÓĞ»úÆ÷ºÍ¹¤³§»·¾³£¬ÎŞÂÛËüÃÇ¿´ÉÏÈ¥¶àÃ´°²È«£»²¢ÆÀ¹ÀÏÂÁĞ¶ÔÄãÔ±¹¤µÄÎ£ÏÕ£º</p>
+<p>ÊÇ/·ñ</p>
+<p>¶ÔÓÚÀ´×Ô¶¯¼şµÄÎ£ÏÕ¹¤ÈËÃÇÊÇ·ñÊÜµ½×ã¹»µÄ±£»¤£¨Í¨¹ıÊ¹ÓÃÀ¡ËÍºÍµ¯³ö×°ÖÃ¡¢·À»¤×°ÖÃ¡¢¸öÈË·À»¤ÓÃÆ·£©£¿</p>
+<p>¶Ô¸ßÎÂ»úÆ÷¹¤ÈËÃÇÊÇ·ñÊÜµ½×ã¹»µÄ±£»¤£¨Í¨¹ıÊ¹ÓÃÀ¡ËÍºÍµ¯³ö×°ÖÃ¡¢·À»¤×°ÖÃ¡¢¸öÈË·À»¤ÓÃÆ·£©£¿</p>
+<p>¹¤ÈËÊ¹ÓÃ·À»¤×°ÖÃ»ò°²È«¿ª¹ØµÄ·½Ê½ÊÇ·ñÕıÈ·£¿</p>
+<p>»ú¹¤ÊÇ·ñ¿ÉÒÔÄÜ¹»µÃ×Å°´Å¥£¿</p>
+<p>¶ÔÓÚÔëÒôÎ£ÏÕ¹¤ÈËÃÇÊÇ·ñÊÜµ½×ã¹»µÄ±£»¤£¨Èç¹û¹¤ÈË±ØĞë´óÉùº°±ğÈË²ÅÄÜÌı¼û£¬¾Í¿ÉÄÜ´æÔÚÔëÒôÎ£ÏÕ¡£¿ÉÄÜÓĞ´ËÎÊÌâµÄµØ·½°üÀ¨Ğå»¨»ú·¿ÒÔ¼°Ğ¬³§µÄĞí¶àµØ·½£©</p>
+<p>¸öÈË·À»¤ÓÃÆ·ÊÇ·ñÃâ·ÑÌá¹©¸ø¹¤ÈË£¿</p>
+<p>¹¤ÈËÃÇÊ¹ÓÃ¸öÈË·À»¤ÓÃÆ·ÊÇ·ñÕıÈ·£¿</p>
+<p>²Ù×÷Ô±ÔÚ¼ô²Ã²¼ÁÏÊ±ÊÇ·ñ´÷ÁË¸ÖË¿ÊÖÌ×£¿</p>
+<p>ÔÚĞèÒªµÄµØ·½£¨ÀıÈç¶¤Å¥¹¤Ğò£©»ú¹¤ÊÇ·ñÓĞÊÊºÏµÄÑÛ¾¦±£»¤´ëÊ©¡£</p>
+<p>Äã¿ÉÈ·±£ËùÓĞ¸ºÔğÎ£ÏÕ»úÆ÷¹¤×÷µÄ¹¤ÈË¶¼ÄêÂú18 Ëê£¿</p>
+<p>Äã¿ÉÈ·±£Ã»ÓĞ»³ÔĞ¹¤ÈË¸ºÔğÎ£ÏÕ»úÆ÷µÄ¹¤×÷£¿</p>
+<p>Äã¿ÉÈ·±£Ã»ÓĞ»³ÔĞ»òÔÂÊÂÆÚ¼äµÄ¹¤ÈËÔÚµÍÎÂµÄ»·¾³¹¤×÷£¿</p>
+<p>±£´æ»úĞµ°²È«¼ÇÂ¼£º</p>
+<p>²é¿´¹æ³Ì£ºÊÇ/·ñ</p>
+<p>ÄãÊÇ·ñÎªÃ¿Ì¨»úÆ÷¶¼×¼±¸ÁËÊéÃæ¹æ³Ì£¬Îª¸Ã»úÆ÷µÄ°²È«²Ù×÷Ìá¹©ÁËÏêÏ¸µÄÖ¸µ¼£¿</p>
+<p>²é¿´ÅàÑµ¼ÇÂ¼£º</p>
+<p>ÊÇ/·ñ</p>
+<p>¼ÇÂ¼ÊÇ·ñÏÔÊ¾¹¤ÈËÃÇ½ÓÊÜÁË¹ØÓÚÈçºÎ°²È«²Ù×÷ËûÃÇ¸÷×ÔµÄ»úÆ÷ÅàÑµ£¿</p>
+<p>²é¿´±£Ñø¼ÇÂ¼£º</p>
+<p>ÊÇ/·ñ</p>
+<p>ÊÇ·ñËùÓĞ»úÆ÷¶¼¶¨ÆÚ±£Ñø£¿</p>
+<p>ÊÇ·ñËùÓĞ¹ÊÕÏºÍ±£ÑøÇé¿ö¶¼¼ÇÔØÔÚ¼ÇÂ¼ÖĞ£¿</p>
+<p>Ã¿Ì¨»úÆ÷µÄµçÔ´ÊÇ·ñ¶¨ÆÚÓÉµç¹¤½øĞĞ²âÊÔ£¿</p>
+<p>ÏÖÔÚ£¬Çë¼¯ÖĞ¿¼²ì»¯Ñ§°²È«¡£</p>
+<p>Î£ÏÕ·ÏÎï ¡¡Î£ÏÕ»¯Ñ§Æ·µÄ°²È«´æ·Å</p>
+<p>²é¿´ÄãµÄ¼ÇÂ¼</p>
+<p>ÊÇ/·ñ</p>
+<p>ÄãÊÇ·ñÓĞÒ»·İ¹¤³§ËùÊ¹ÓÃ»¯Ñ§Æ·µÄÇåµ¥£¿£¨Õâ¿ÉÄÜ°üÀ¨Ëá¡¢ÈÜ¼Á¡¢½ºË®¡¢Æá¡¢Ä«Ë®¡¢ÇåÆá¡¢È¾ÁÏ»òÉ±³æ¼Á£©</p>
+<p>¶ÔÓÚËùÊ¹ÓÃµÄÃ¿ÖÖ»¯Ñ§Æ·ÄãÊÇ·ñÓĞÖĞÎÄµÄ¡¶ÎïÁÏ°²È«×ÊÁÏ±í¡·£¿</p>
+<p>ÄãÊÇ·ñÓĞÊéÃæ³ÌĞòÖ¸ÒıÃ¿ÖÖ»¯Ñ§Æ·µÄ°²È«´¢´æ¡¢Ê¹ÓÃºÍÆúÖÃ·½·¨£¿</p>
+<p>Ñ¯ÎÊÄãµÄÈËÊÂ¾­Àí£º</p>
+<p>ÊÇ·ñËùÓĞ´¦ÀíÎ£ÏÕ»¯Ñ§Æ·µÄ¹¤ÈË¶¼½ÓÊÜ¶¨ÆÚÌå¼ì£¿</p>
+<p>²é¿´ÅàÑµ¼ÇÂ¼</p>
+<p>ÊÇ/·ñ</p>
+<p>ÊÇ·ñ´¦ÀíÎ£ÏÕ»¯Ñ§Æ·µÄËùÓĞ¹¤ÈË¶¼½ÓÊÜ¹ı¹ØÓÚÁË½âÎ£ÏÕ¡¢°²È«Ê¹ÓÃ»¯Ñ§Æ·¡¢</p>
+<p>Ê¹ÓÃ·À»¤ÓÃÆ·¡¢ÇåÀíĞ¹Â©ÎïºÍ·ÏÎïµÄÊÊµ±´¦ÖÃµÈ·½ÃæµÄÅàÑµ£¿</p>
+<p>Óë¸ºÔğ»¯Ñ§Æ·°²È«µÄ¾­ÀíÒ»Æğ¼ì²é»¯Ñ§´¢²ØÊÒ£º</p>
+<p>»¯Ñ§Æ·ÊÇ·ñ×°ÔÚÔÚÃÜ·âÈİÆ÷ÖĞ£¬²¢´æ·ÅÔÚ¹¤³§´óÂ¥Ö®ÍâµÄÉÏËøµÄ´¢²ØÊÒÖĞ£¿</p>
+<p>ÊÇ·ñËùÓĞÈİÆ÷ÉÏ¶¼ÓĞ¹ØÓÚ°²È«´æ·Å¡¢°áÔËºÍÊ¹ÓÃµÄÖĞÎÄÖ¸Ê¾±êÇ©£¿</p>
+<p>Ñ²ÊÓ¹¤³§</p>
+<p>ÊÇ/·ñ</p>
+<p>ÊÇ·ñ´¦ÀíÎ£ÏÕ»¯Ñ§Æ·µÄËùÓĞ¹¤ÈË¶¼ÄêÂú18 Ëê£¿</p>
+<p>Äã¿ÉÈ·±£Ã»ÓĞ»³ÔĞ¹¤ÈË¸ºÔğÎ£ÏÕ»¯Ñ§Æ·µÄ¹¤×÷£¿</p>
+<p>ÔÚÊ¹ÓÃÎ£ÏÕ»¯Ñ§Æ·µÄµØ·½ÊÇ·ñ¿É¿´¼û¾¯¸æ¸æÊ¾£¿</p>
+<p>¹¤ÈËÃÇÊÇ·ñ×ñÊØ´¦Àí»¯Ñ§Æ·µÄ³ÌĞò£¿</p>
+<p>ÊÇ·ñÏò¹¤ÈËÃÇÌá¹©ÁËÊ¢»¯Ñ§Æ·µÄÊÊµ±ÈİÆ÷£¿</p>
+<p>ÊÇ·ñÏò¹¤ÈËÃÇÃâ·ÑÌá¹©ÁËÊÊµ±µÄ¸öÈË·À»¤ÓÃÆ·£¿</p>
+<p>ÊÇ·ñÃ¿¸ö´¦Àí»¯Ñ§Æ·µÄÈË¶¼´©´÷ÁËÊÊµ±µÄ·À»¤ÓÃ¾ß£¨»¤Ä¿ÕÖ¡¢Ãæ¾ß¡¢ÊÖÌ×¡¢Ğ¬Íà¡¢·À»¤·ş£©£¿</p>
+<p>ÔÚ´æÔÚÎ£ÏÕ»¯Ñ§Æ·Ğ¹Â©·çÏÕµÄµØ·½ÊÇ·ñÌá¹©ÁËÊÊµ±µÄÇåÀí²ÄÁÏ£¿</p>
+<p>´¦ÖÃ³ÌĞòÊÇ·ñ×ÜÊÇµÃµ½×ñÊØ£¿</p>
+<p>¿ÕÆøÖÊÁ¿¾­¼à²âÁË½âÊÇ·ñÊôÓÚÊÊµ±£¿£¨ÀıÈç¹ØÓÚÈÜ¼ÁºÍ»Ò³¾Ë®Æ½£©</p>
+<p>Óë¸ºÔğ»¯Ñ§Æ·°²È«µÄ¾­ÀíÒ»Æğ¼ì²é»¯Ñ§Æ·´¢²ØÊÒ£º</p>
+<p>ÊÇ/·ñ</p>
+<p>ÊÇ·ñÃ¿¸ö°à´Î¶¼ÓĞÒ»¸öÈË¸ºÔğ¼ÇÂ¼ÁìÓÃ»¯Ñ§Æ·µÄÇé¿ö£¿</p>
+<p>Õâ¸öÈËÊÇ·ñ¶Ô´æÈë»òÁìÓÃ»¯Ñ§Æ·µÄÇé¿ö½øĞĞÁËÇå³şµÄ¼ÇÂ¼£¿</p>
+<p>±£´æ»¯Ñ§Æ·°²È«¼ÇÂ¼£º</p>
+<p>²é¿´ÈËÊÂ¼ÇÂ¼£º</p>
+<p>ÊÇ/·ñ</p>
+<p>ÄãÊÇ·ñÓĞÒ»·İ´ÓÊÂÎ£ÏÕ»¯Ñ§Æ·¹¤×÷µÄËùÓĞ¹¤ÈËµÄÇåµ¥£¿</p>
+<p>Õâ·İÇåµ¥ÊÇ·ñÏÔÊ¾ËùÓĞ´ÓÊÂÎ£ÏÕ»¯Ñ§Æ·¹¤×÷µÄ¹¤ÈË¶¼ÒÑÄêÂú18 Ëê£¿</p>
+<p>´ÓÊÂÎ£ÏÕ»¯Ñ§Æ·¹¤×÷µÄ¹¤ÈËµÄÌå¼ìÊÇ·ñ¼ÇÔØÔÚÈËÊÂ¼ÇÂ¼ÖĞ£¿</p>
+<p>²é¿´¹¤ÈËµÄ¹ÍÓÃºÏÍ¬£º</p>
+<p>Ã¿Î»¹¤ÈËµÄ¹ÍÓÃºÏÍ¬ÊÇ·ñÁĞÃ÷ÈÎºÎ¿ÉÄÜÒò¸Ã¹¤×÷¶øÒıÖÂµÄÖ°Òµ²¡£¿</p>
+<p>¹ÍÓÃºÏÍ¬¿ÉÓĞ×¢Ã÷¹¤ÈË¾Ü¾ø¸ºÔğÎ£ÏÕ¹¤ÖÖ¶ø²»ÊÜ½â¹ÍÍşĞ²µÄÈ¨Àû£¿</p>
+<p>½¡¿µºÍ°²È«¹ÜÀí</p>
+<p>ÊÇ/·ñ</p>
+<p>ÄãÊÇ·ñ±¸ÓĞ½¡¿µºÍ°²È«·½ÃæµÄ·¨ÂÉÎÄ±¾</p>
+<p>ÄãÃÇÊÇ·ñÓĞÊéÃæµÄ½¡¿µºÍ°²È«¹ÜÀíÖÆ¶È£¿</p>
+<p>ÄãÊÇ·ñÒÑ¾­Îª¸ß·çÏÕÎÊÌâÖÆ¶¨ÁËĞĞ¶¯¼Æ»®£¿</p>
+<p>Èç¹¤³§ÓµÓĞ³¬¹ı300 Ãû¹¤ÈË£¬¿ÉÓĞÎª¹¤ÈËÉèÁ¢Ò»¸öÉú²ú°²È«Î¯Ô±»á£¬ÒÔ¹ÄÀø¹ÜÀí²ãºÍ¹¤ÈËÌÖÂÛÓĞ¹Ø½¡¿µºÍ°²È«µÄÎÊÌâ£¿</p>
+<p>ÈçÃ»ÓĞ£¬Äã¿ÉÓĞÎ¯ÈÎÒ»ÃûÈ«Ö°µÄ°²È«Ö÷ÈÎ£¿</p>
+<p>Èç¹¤³§¹¤ÈËĞ¡ÓÚ300 Ãû£¬Äã¿ÉÓĞÎ¯ÈÎÒ»Ãû¼æÖ°µÄ°²È«Ö÷ÈÎ£¿</p>
+<p>ÊÇ·ñÓĞ¸ß¼¶¾­Àí±»Ö¸¶¨¸ºÔğ½¡¿µºÍ°²È«ÎÊÌâ£¬°üÀ¨Ïû·À°²È«¡¢»úÆ÷°²È«ºÍ»¯Ñ§Æ·°²È«£¿</p>
+<p>Èç¹ûÄãÄÜ¹»¶ÔËùÓĞÕâĞ©ÎÊÌâ¶¼´ğ&ldquo;ÊÇ&rdquo;£¬ÄÇÃ´½¡¿µºÍ°²È«¶ÔÄã¾Í²»ÊÇÒ»¸ö¸ß·çÏÕÁìÓò¡£Èç¹ûÄã¶ÔÕâĞ©ÎÊÌâÖĞÈÎºÎÒ»¸öµÄ»Ø´ğÊÇ&ldquo;·ñ&rdquo;£¬Äã¾ÍĞèÒªÖÆ¶¨Ò»¸öĞĞ¶¯¼Æ»®£¬ÒÔ¸ÄÉÆÄãÔÚÕâ¸öÁìÓòÖĞµÄ±íÏÖ¡£Çë²Î¿´&ldquo;´ïµ½±ê×¼&rdquo;ÁË½âÓ¦¸ÃÔõÃ´×ö¡£Äã½«ĞèÒª°ÑÄãµÄĞĞ¶¯¼Æ»®ÄÃ¸øÉóºËÔ±¿´£¬²¢Ö¤Ã÷£¬ÕâĞ©ĞĞ¶¯ÕıÔÚÖ´ĞĞÖĞ¡£<br />
+&nbsp;</p>
+</div>
+
+<!--·ÖÒ³--> 
+<div class="catlist_sp">&nbsp;</div>
+
+
+		<div style="padding-top:10px;">
+		<ul>
+		<li><strong>ÉÏÒ»¸ö£º</strong>  
+        <a href="/factory/factory227.htm" target="_blank" title="£¨ÂêÉ¯Ñé³§£©µÀµÂ³ĞÅµ×ÔÖúÖ¸ÄÏ£¨Îå£©">£¨ÂêÉ¯Ñé³§£©µÀµÂ³ĞÅµ×ÔÖúÖ¸ÄÏ£¨Îå£©</a> 
+        </li>
+		<li><strong>ÏÂÒ»¸ö£º</strong> 
+        <a href="/factory/factory229.htm" target="_blank" title="NordstormÑé³§Î¯ÍĞĞÅ">NordstormÑé³§Î¯ÍĞĞÅ</a> 
+         </li>
+        </ul>
+		</div>
+       
+</div>
+<!--END:ÄÚÈİÕıÎÄ-->
+        
+    </div> 
+    <!-- e:ÓÒ1 -->
+ 
+</div>
+<div class="footer">
+
+<p>
+
+<a href="/">ç½‘ç«™é¦–é¡µ</a> | 
+
+		<a href="/us/about.html">å…¬å¸ç®€ä»‹</a> | <a href="/news/">æ–°é—»èµ„è®¯</a> | <a href="/cases/">æˆåŠŸæ¡ˆä¾‹</a> |   <a href="/factory/">å®¢æˆ·éªŒå‚</a> |  <a href="/auth/auth_11.html">ä½“ç³»è®¤è¯å’¨è¯¢</a> |  <a href="/auth/auth_12.html">è®¤è¯æœºæ„å’¨è¯¢</a> | <a href="/guestbook/">ç½‘ç«™ç•™è¨€</a> |  <a href="/us/conact.html">è”ç³»æˆ‘ä»¬</a>   
+
+       
+
+     </p>
+
+    <div class="footer_b">
+
+        <p>
+
+        Copyright &#169; 2008-2012  <a href="http://www.sruis.com">ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓĞÏŞ¹«Ë¾</a> °æÈ¨ËùÓĞ  
+
+          å¤‡æ¡ˆï¼š<a href="http://www.miibeian.gov.cn" target="_blank">»¦ICP±¸12042867ºÅ-1</a> 
+         </p>
+
+        <p>
+
+		<SCRIPT language="javascript" type="text/javascript"  src="/app/count/count.php"></script>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/app/app.php?moduleid=5&html=show&id=228"></script>
+      
+
+<style type="text/css"> 
+.floatonline_1{ padding:1px; width:130px; text-align:left;}
+.scroll_title_2{height:25px; line-height:25px; background:url(/style/default/images/online4_1.gif) no-repeat 0px 0px; position:relative;}
+.scroll_title_2 span{ padding-left:15px; font-weight:bold; color:#FFFFFF;}
+.scroll_title_2 a{ display:block; position:absolute; right:8px; top:6px; line-height:15px;  width:11px; height:11px; background:url(/style/default/images/close2_1.gif) no-repeat 0px 0px;}
+.scroll_main2{ padding:4px; background:#c5e2f8; border:1px solid #498bcf;}
+.scroll_text2{ background:#FFFFFF; border:1px solid #a7d8d7; padding:3px;}
+.scroll_qq_1{padding:2px 2px 0px 2px; text-align:center; color:#333333; }
+.scroll_qq_1 img{padding:5px 0px 0px 0px;}
+.scroll_skype_1{ padding:5px;}
+.scroll_alibaba_1{ padding:5px;}
+.scroll_foot_2{ background:#FFFFFF; border:1px solid #a7d8d7; text-align:center; padding:3px; line-height:18px; margin-top:5px;}}
+</style>
+<script type='text/javascript' src='/style/default/js/Contact.js'></script>
+<div id='floatDivr' style=' top:150px; right:0px;position: absolute; z-index:100;' class='floatonline_1'>
+<div class='scroll_title_2'><span>ÔÚÏß×ÉÑ¯</span><a href='#' title='¹Ø±Õ' onmousedown='Mouseclose()'>&nbsp;</a></div>
+<div class='scroll_main2'>
+<div class='scroll_text2'>
+<div class='scroll_qq_1'>
+¸¶¾­Àí<a href='tencent://message/?uin=361459714&Site=&Menu=yes'  title='QQÔÚÏß×ÉÑ¯' style='text-decoration:none;'>
+<img border='0' SRC='http://wpa.qq.com/pa?p=1:361459714:6' align="middle"></a>
+</div>
+<div class='scroll_qq_1'>
+ĞÁĞ¡½ã<a href='tencent://message/?uin=1296602272&Site=&Menu=yes'  title='QQÔÚÏß×ÉÑ¯' style='text-decoration:none;'>
+<img border='0' SRC='http://wpa.qq.com/pa?p=1:1296602272:6' align="middle"></a>
+</div>
+<div class='scroll_qq_1'>
+ºúĞ¡½ã<a href='tencent://message/?uin=970966634&Site=&Menu=yes'  title='QQÔÚÏß×ÉÑ¯' style='text-decoration:none;'>
+<img border='0' SRC='http://wpa.qq.com/pa?p=1:970966634:6' align="middle"></a>
+</div>
+</div>
+<div class='scroll_foot_2'><span style='font-size:12px; font-weight:bold;'>·şÎñÈÈÏß<br>021-57781112</span></div>
+</div>
+</DIV>
+<SCRIPT language=JavaScript type=text/JavaScript> 
+function Mouseclose(){document.getElementById('floatDivr').style.display='none';}
+
+window.setInterval("heartBeat()",2);
+</SCRIPT>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4e78d5c1e9c2317781abe2571b30876f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<center><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258504154'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1258504154%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script></center>
+
+
+</body>
+
+</html>

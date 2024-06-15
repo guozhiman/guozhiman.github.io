@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" ã€€ã€€ />
+
+
+<meta name="keywords" content="BSCIÑé³§Á÷³ÌÖ¸µ¼£¨¶ş£©"/>
+
+<meta name="description" content="¶ş¡¢ÏÖ³¡£¨°üÀ¨£º³µ¼ä£¬·¹ÌÃ£¬ËŞÉá£¬²ŞËù£¬Ô¡ÊÒµÈ£©Ïû·À¹¤³§ĞèÒª°²×°»ğÔÖ×Ô¶¯±¨¾¯ÏµÍ³£¨ĞèÓĞ±¸ÓÃµç£©¡£Ãğ»ğÆ÷ĞèÒªĞü¹Ò»òÕß·ÅÖÃÔÚ"/>
+
+<link rel="stylesheet" type="text/css" href="/style/default/style.css"/>
+
+<script type="text/javascript" src="/data/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="/data/js/config.js"></script>
+
+<script type="text/javascript" src="/data/js/xqcms.js"></script>
+
+<script language="JavaScript">
+
+function validate() {
+
+  if ($("#kw").val()=="") {
+
+	  alert("è¯·è¾“å…¥æ‚¨è¦æœç´¢çš„å…³é”®å­—");
+
+	  return false;
+
+  }
+
+  return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="m">
+
+<!--s:é¡µå¤´-->
+
+    <div class="header clearfix">
+
+      <div class="logo"><a href="/"><img src="http://www.sruis.com/upfiles/201209/14/2012091416395432.jpg" alt="ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓĞÏŞ¹«Ë¾" /></a></div> 
+
+      <div class="logor">
+
+      <div><span>
+
+<img border=0 src="/style/default/images/home.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost/'); return(false);">è®¾ä¸ºé¦–é¡µ</a> &nbsp; 
+
+<img border=0 src="/style/default/images/bookmark.jpg" align="absmiddle"> <a href="javascript:void(0);" onClick="window.external.addFavorite('http://localhost/','ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓĞÏŞ¹«Ë¾'); return(false);">åŠ å…¥æ”¶è—</a> &nbsp; 
+
+
+
+<img border=0 src="/style/default/images/mail.jpg" align="absmiddle"> <a href="/us/conact.html">è”ç³»æˆ‘ä»¬</a>
+
+
+
+</span></div>
+
+ 
+
+      </div>
+
+    </div>
+
+<!--e:é¡µå¤´-->
+
+</div>
+
+<div class="m">
+
+  
+
+<!-- s:å¯¼èˆª -->
+
+    <div class="menu">
+
+        <ul>
+
+            <li><a class="menumain" href="/">ç½‘ç«™é¦–é¡µ</a></li>
+
+            <li><a class="menumain" href="/us/about.html">å…¬å¸ç®€ä»‹</a></li>
+
+            <li><a class="menumain" href="/news/">æ–°é—»èµ„è®¯</a></li>
+
+            <li><a class="menumain" href="/cases/">æˆåŠŸæ¡ˆä¾‹</a></li>
+
+            <li><a class="menumain" href="/factory/">å®¢æˆ·éªŒå‚</a></li>
+
+            <li><a class="menumain" href="/auth/auth_11.html">ä½“ç³»è®¤è¯å’¨è¯¢</a></li>  
+
+            <li><a class="menumain" href="/auth/auth_12.html">è®¤è¯æœºæ„å’¨è¯¢</a></li>       
+
+            <li><a class="menumain" href="/guestbook/">åœ¨çº¿ç•™è¨€</a></li>
+
+            <li><a class="menumain" href="/us/conact.html">è”ç³»æˆ‘ä»¬</a></li>
+
+
+
+        </ul>
+
+    </div>
+
+<!-- e:å¯¼èˆª -->
+
+</div>
+
+<div class="m">
+
+<style type="text/css">
+	*{margin:0;padding:0;list-style-type:none;}
+	a,img{border:0;}
+	/* flexslider */
+	.flexslider{position:relative;height:250px;overflow:hidden;background:url(/templates/default/images/loading.gif) 50% no-repeat;}
+	.slides{position:relative;z-index:1;}
+	.slides li{height:400px;}
+	.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+	.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+	.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(images/dot.png) right 0 no-repeat;cursor:pointer;}
+	.flex-control-nav .flex-active{background-position:0 0;}
+
+	.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+	.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+	.flex-direction-nav li a.flex-prev{left:40px;background:url(images/prev.png) center center no-repeat;}
+	.flex-direction-nav li a.flex-next{right:40px;background:url(images/next.png) center center no-repeat;}
+</style>
+
+</head>
+<body>
+<div class="flexslider">
+	<ul class="slides">
+		<li style="background:url(/templates/default/images/img1.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(/templates/default/images/img2.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(/templates/default/images/img3.jpg) 50% 0 no-repeat;"></li>
+		
+
+	</ul>
+</div>
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/templates/default/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.flexslider').flexslider({
+			directionNav: true,
+			pauseOnAction: false
+		});
+	});
+</script>
+
+
+</div><div class="m mid clearfix">
+    <div class="m_l">
+        <div style="width:250px;">
+             <div class="title1"><h2>ÈÈÃÅµã»÷ <em>Top Hits</em></h2></div>
+              <div class="bboby">
+                <ul>
+                           <li class="newslist"><a  
+  href="/factory/factory281.htm" target="_blank" title="BSCI×îĞÂ³ÉÔ±ÁĞ±í">BSCI×îĞÂ³ÉÔ±ÁĞ±í</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory165.htm" target="_blank" title="ÎÖ¶ûÂêÑé³§&quot;Ôì¼Ù´óÏ·&quot;">ÎÖ¶ûÂêÑé³§&quot;Ôì¼Ù´óÏ·&quot;</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory286.htm" target="_blank" title="Ó¢·ş×°ÁãÊÛÉÌAsda, Primark and Tesco º£Íâ¡°Ñªº¹¹¤³§¡±±»ÆØ¹â">Ó¢·ş×°ÁãÊÛÉÌAsda, Primark and Tesco º£Íâ¡°Ñªº¹¹¤³§¡±±»ÆØ¹â</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory253.htm" target="_blank" title="Bon-tonÈÏÖ¤¸ß·çÏÕÎ¥¹æÄÚÈİ">Bon-tonÈÏÖ¤¸ß·çÏÕÎ¥¹æÄÚÈİ</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory269.htm" target="_blank" title="PVHÑé³§±ê×¼">PVHÑé³§±ê×¼</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory287.htm" target="_blank" title="BSCIÈÏÖ¤Ñé³§×ÉÑ¯½éÉÜ">BSCIÈÏÖ¤Ñé³§×ÉÑ¯½éÉÜ</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory265.htm" target="_blank" title="FCCAÑé³§±ê×¼">FCCAÑé³§±ê×¼</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory268.htm" target="_blank" title="FCCAÑé³§×ÊÁÏ">FCCAÑé³§×ÊÁÏ</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory71.htm" target="_blank" title="Lowe's QMSÖÊÁ¿ÌåÏµÆÀ¹À±í£¨Ò»£©">Lowe's QMSÖÊÁ¿ÌåÏµÆÀ¹À±í£¨Ò»£©</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory140.htm" target="_blank" title="2012ÎÖ¶ûÂêSCSÑé³§Çåµ¥">2012ÎÖ¶ûÂêSCSÑé³§Çåµ¥</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory272.htm" target="_blank" title="PVHÑé³§¹¤×Ê·½ÃæµÄÉóºË">PVHÑé³§¹¤×Ê·½ÃæµÄÉóºË</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory270.htm" target="_blank" title="PVHÎÄ¼şÇåµ¥">PVHÎÄ¼şÇåµ¥</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory273.htm" target="_blank" title="PVH²éÔ±¹¤·ÃÌ¸ÎÊ¾í">PVH²éÔ±¹¤·ÃÌ¸ÎÊ¾í</a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory285.htm" target="_blank" title="Target È«Çò×ñÔ¼(ÈËÈ¨)Ñé³§³ÌĞò"><span style="color:#000000">Target È«Çò×ñÔ¼(ÈËÈ¨)Ñé³§³ÌĞò</span></a> </li>
+                <li class="newslist"><a  
+  href="/factory/factory271.htm" target="_blank" title="PVH·´¿ÖÑé³§ÅàÑµ">PVH·´¿ÖÑé³§ÅàÑµ</a> </li>
+  	
+                </ul>
+            </div>
+                 <div class="title2"><span class="fr more"><a href="/us/conact.html"><img src="/style/default/images/more.jpg" alt=""/></a></span><h2>è”ç³»æ–¹å¼ <em>Contact us</em></h2></div>
+    <div class="bboby" style="padding-right:0px;">
+    <!--p>è”ç³»äººï¼š¸µÏÈÉú</p-->
+    <p>ç”µè¯ï¼š021-57781112</p>
+    <!--p>æ‰‹æœºï¼š18018549899</p-->
+    <p>ä¼ çœŸï¼š021-57881006</p>
+    <!--p>QQï¼š361459714</p-->
+    <p>é‚®ç®±ï¼šfurt@sruis.com</p>
+     <p>ç½‘å€ï¼šhttp://localhost</p>
+<p></p>
+   
+    </div>
+</div>
+<div class="left_b_bg"></div> 
+    </div> 
+    <!-- s:ÓÒ1 -->
+    <div class="m_r">
+        <div class="title1"><span class="fr">µ±Ç°Î»ÖÃ: <a href="/">Ê×Ò³</a> &gt;<a href="/factory/factory_139.html">BSCIÑé³§×ÉÑ¯×¨Ìâ</a> &gt; °¸ÀıÏêÇé</span><h2>°¸ÀıÏêÇé</h2></div>
+              <!--START:ÄÚÈİÕıÎÄ-->
+<div class="content-detail">
+<h1>BSCIÑé³§Á÷³ÌÖ¸µ¼£¨¶ş£©</h1>
+<div class="info">
+<span>·¢²¼ÈÕÆÚ£º2012-08-20 12:48		µã»÷£º<font color="red" id="hits">81</font> ´Î</span>
+
+</div>
+
+  &nbsp;<b><span style="FONT-SIZE: small">¶ş¡¢ÏÖ³¡</span></b><span style="font-size: small; ">£¨°üÀ¨£º³µ¼ä£¬·¹ÌÃ£¬ËŞÉá£¬²ŞËù£¬Ô¡ÊÒµÈ£©</span>
+<div class="dashednew">&nbsp;</div>
+<div class="detail_ct">
+<p><b><span style="FONT-SIZE: small">Ïû·À</span></b></p>
+<p><span style="FONT-SIZE: small">¹¤³§ĞèÒª°²×°»ğÔÖ×Ô¶¯±¨¾¯ÏµÍ³£¨ĞèÓĞ±¸ÓÃµç£©¡£</span></p>
+<p><span style="FONT-SIZE: small">Ãğ»ğÆ÷ĞèÒªĞü¹Ò»òÕß·ÅÖÃÔÚ×¨ÓÃÏäÄÚ¡£Ãğ»ğÉè±¸ĞèÒªÈİÒ×È¡µÃ¡£Ãğ»ğÆ÷ĞèÒª±êÊ¶³öÆäÎ»ÖÃ¡£Ğü¹ÒµÄ¸ß¶È£º¾àÀëµØÃæÓ¦¸ßÓÚ80CM£¬»ò×Ü¸ß¶È´ïµ½¡£</span></p>
+<p><span style="FONT-SIZE: small">±êÊ¶¿É¼ûµÄµØÃæÌÓÉúÖ¸Ê¾ÏßºÍÕÅÌùÌÓÉúÊèÉ¢Í¼¡£</span></p>
+<p><span style="FONT-SIZE: small">³µ¼äĞèÒª³ä×ãµÄ³ö¿Ú¡£½ô¼±³ö¿ÚĞèÒªÈİÒ×½øÈë£¬²»ÄÜ¶ÂÈû¡£³§ÇøĞèÒª°²×°×ã¹»µÄ³ö¿Ú±êÊ¾£¨°²È«³ö¿ÚÖ¸Ê¾ÅÆ£©¡£</span></p>
+<p><span style="FONT-SIZE: small">³§ÇøĞèÒª°²×°×ã¹»µÄÓ¦¼±µÆ¡£</span></p>
+<p><span style="FONT-SIZE: small">»ğÔÖºÍÌÓÉúÑİÏ°ĞèÒªÒ»ÄêÖÁÉÙ¾ÙĞĞÁ½´Î£¬²¢¼ÍÂ¼ÔÚ°¸£¨³µ¼äÓëËŞÉáĞè·Ö¿ª×ö£©¡£</span></p>
+<p><span style="FONT-SIZE: small">·¿¼äÓĞ10Î»¹¤ÈËµÄÃÅÓ¦Ê±³£ÍùÍâ´ò¿ª£¬»òÍÆ¿ª¡£</span></p>
+<p><b><span style="FONT-SIZE: small">»¯Ñ§Æ·Ê¹ÓÃ</span></b></p>
+<p><span style="FONT-SIZE: small">ÈçÓĞ´óÁ¿»¯Ñ§Æ·£¬Ğè½¨Á¢»¯Ñ§Æ·²Ö£¬¼°ÔÚ»¯Ñ§Æ·Ê¹ÓÃµÄµØ·½£¬ÉèÓĞÏ´ÑÛÌ¨¡£</span></p>
+<p><span style="FONT-SIZE: small">´óÈİÁ¿µÄ»¯Ñ§Æ·ĞèÒªÓĞµÚ¶şÈİÆ÷¡£»¯Ñ§Æ·´æ·Å¼°Ê¹ÓÃµÄµØ·½¾ùĞèÒªÓĞÎïÖÊ°²È«×ÊÁÏ±í¡£¿ÕµÄ»¯Ñ§Æ·ÈİÆ÷ĞèÒª·ÅÖÃÔÚ°²È«ºÍ¼Ó¸ÇµÄµØ·½¡£</span></p>
+<p><b><span style="FONT-SIZE: small">¹¤×÷Ìõ¼ş</span></b></p>
+<p><span style="FONT-SIZE: small">Éú²ú³§·¿ĞèÒª¸²¸ÇÍêºÃºÍ½øĞĞ¾­³£ĞÔ¼ì²é¡£</span></p>
+<p><span style="FONT-SIZE: small">¹¤³§ĞèÒª¸øÔ±¹¤Ìá¹©³ä·ÖµÄ¸öÈË±£»¤ÓÃÆ·£¬±ÈÈçÑÛÕÖ£¬ºôÎüÆ÷£¬Ïğ½ºÊÖÌ×ºÍ¶úÈû¡£</span></p>
+<p><span style="FONT-SIZE: small">ÒªÔÚĞèÒªÅä´øÀÍ±£ÓÃÆ·µÄ¸ÚÎ»ÉÏ£¬Õ³ÌùÏà¹Ø¾¯Ê¾ÅÆ¡£</span></p>
+<p><span style="FONT-SIZE: small">ÒªÔÚÊ¹ÓÃµÄ»úÆ÷ÉÏ£¬Õ³Ìù&ldquo;²Ù×÷Ö¸ÄÏ&rdquo;¡£</span></p>
+<p><span style="FONT-SIZE: small">Éú²úÉè±¸ÉÏµÄ×ª¶¯Öá»ò·çÉÈ»ò·ÉÂÖ²¿·ÖĞèÒª°²×°ÓĞ±£»¤ÕÖ¡£</span></p>
+<p><span style="FONT-SIZE: small">´óĞÍµç¿ØÉè±¸ĞèÒª°²×°ÓĞÄÚ¸ÇºÍÍâ¸Ç£¬¿ª¹ØĞèÒª±êÊ¾¼°Õ³ÌùµçÑ¹¾¯Ê¾ÅÆ¡£</span></p>
+<p><span style="FONT-SIZE: small">ÕôÆû¹øÂ¯²»Ó¦¿¿½üËŞÉá£¬½ô¼±³ö¿Ú£¬ÌÓÉúÍ¨µÀ¼°Â¥Ìİ£¬ËøÉÏ¼°Ö»ÈİĞíÊÚÈ¨Ô±¹¤½Ó´¥£¬¶¨ÆÚ½øĞĞ±£Ñø¼°Äê¼ì¡£</span></p>
+<p><span style="FONT-SIZE: small">¶ÔÓÚÓĞÅç·Û³µ¼äºÍÁò»¯¹¤ĞòµÄĞè×ö¿ÕÆøÆÀ¹À¡£</span></p>
+<p><b><span style="FONT-SIZE: small">ËŞÉá</span></b></p>
+<p><span style="FONT-SIZE: small">ËŞÉáÓ¦¸ÃÖÁÉÙÓĞÒ»¸öÒ½Ò©Ïä¡£</span></p>
+<p><span style="FONT-SIZE: small">ËŞÉáĞèÒª°²×°Ó¦¼±µÆºÍÕÅÌùÆ½ÃæÌÓÉúÍ¼¡£</span></p>
+<p><span style="FONT-SIZE: small">ËŞÉáĞèÒª°²×°»ğÔÖ±¨¾¯ÏµÍ³¡£ËŞÉáÄÚµÄÃğ»ğÆ÷ĞèÒª±êÊ¶³öÆäÎ»ÖÃ¡£</span></p>
+<p><span style="FONT-SIZE: small">ËŞÉá»òĞİÏ¢ÊÒ²»ÄÜÓë³µ¼äºÍ²Ö¿âÔÚÍ¬Ò»´±Â¥¡£</span></p>
+<p><b><span style="FONT-SIZE: small">ÎÀÉú/¸£Àû´ıÓö</span></b></p>
+<p><span style="FONT-SIZE: small">¹¤³§ĞèÒªÔÚÏ´ÊÖ¼äºÍÏ´Ôè¼ä°²×°ÒşË½ÃÅ¡£Ï´ÊÖ¼äĞèÒªÓĞ·ÊÔíºÍÊÖÖ½¡£</span></p>
+<p><span style="FONT-SIZE: small">Ï´ÊÖ¼äÊıÁ¿£º²Ş¸ñ£ºÄĞ£º4¸ñ/100ÈË£¬Ôö¼Ó50ÈË¼ÓÒ»¸ñ£»Å®£º5¸ñ/100ÈË£¬Ôö¼Ó35ÈË¼ÓÒ»¸ñ¡£</span></p>
+<p><span style="FONT-SIZE: small">¹¤³§ĞèÒª½¨Á¢Ò»¸ö¼±¾ÈÊÒ¡£</span></p>
+<p><span style="FONT-SIZE: small">¹¤³§ĞèÒªÓĞÔÚ½ô¼±Çé¿öÏÂÌá¹©Ò½ÁÆ¼±¾ÈµÄ´ëÊ©¡£</span></p>
+<p><span style="FONT-SIZE: small">¹¤³§ĞèÒª¸øÖ¸¶¨Ô±¹¤Ìá¹©¼±¾ÈÅàÑµ£¨µ½Ò½Ôº»òÓÉÓĞĞĞÒ½×Ê¸ñÖ¤µÄ³§Ò½½øĞĞÅàÑµ£©¡£</span></p>
+<p><span style="FONT-SIZE: small">¹¤×÷ÏÖ³¡ĞèÒªÓĞ¼±¾ÈÒ©Æ·£¨¼±¾ÈÏäÉÏĞèÌùÉÏÒ©Æ·Çåµ¥¼°½ÓÊÜ¹ı¼±¾ÈÅàÑµÈËÔ±µç»°£©¡£</span></p>
+<p><b><span style="FONT-SIZE: small">ÆäËü</span></b></p>
+<p><span style="FONT-SIZE: small">ÉèÓĞÒâ¼ûÏä£¬ÊÕ¼¯Ô±¹¤Òâ¼û¡£</span></p>
+<p><span style="FONT-SIZE: small">³¬¹ı4¸öÌ¨½×»ò30Ó¢´ç¸ßµÄÂ¥Ìİ°²×°ÍêÕû·öÊÖ¡£</span></p>
+<p><b><span style="FONT-SIZE: small">Èı¡¢Ô±¹¤·ÃÌ¸</span></b></p>
+<p><span style="FONT-SIZE: small">ÔÚ³µ¼äËæ»ú³é²é¹¤ÈËÔÚÒ»¼ä·¿Àï½øĞĞÌ¸»°£¬¹¤³§¸ºÔğÈË²»ÄÜÔÚ³¡¼àÌı¡£</span></p>
+<p><span style="FONT-SIZE: small">ÉóºËÔ±»áÌØ±ğÁôÒâÏàÃ²ÄêÇáµÄ¹¤ÈË£¬»á²é¿´ÆäÈËÊÂ×ÊÁÏ¼°ºÏÍ¬£¬Ö¤ÊµÊÇ·ñÊôÍ¯¹¤»òÎ´³ÉÄê¹¤¡£</span></p>
+<p><span style="FONT-SIZE: small">·ÃÌ¸ÄÚÈİÒ»°ãÎ§ÈÆÔ±¹¤µÄ´ıÓö£¬¹¤³§¶ÔËûÃÇÊµÊ©µÄÕş²ß¡£</span></p>
+<p><b><span style="FONT-SIZE: small">ËÄ¡¢C²¿·Ö</span></b></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§×î¸ß¹ÜÀí²ãÏò¹ÍÔ±Ã÷È·¹«Ë¾ÓĞ¹ØÉç»áÔğÈÎºÍÀÍ¶¯Ìõ¼şµÄ·½Õë¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§È·±£×éÖ¯ÄÚ¸÷½×²ã¶¼Ã÷°×ºÍÖ´ĞĞSA8000±ê×¼µÄÒªÇó¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé×î¸ß¹ÜÀí²ã¶¨ÆÚ¶ÔÕÕSA8000±ê×¼µÄÒªÇó»ò¹«Ë¾ÔŞÍ¬µÄÆäËüÒªÇó£¬¼ìÌÖ¹«Ë¾µÄ·½Õë³ÌĞòºÍ±íÏÖÊÇ·ñ×ã¹»ÊÊµ±ºÍ³ÖĞøÓĞĞ§¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§¶ÔÖÆ¶È½øĞĞÊÊµ±µÄĞŞ¶©ºÍ¸ÄÉÆ¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§¸ù¾İÆäÓ­ºÏSA8000±ê×¼µÄÒªÇóµÄÄÜÁ¦£¬½¨Á¢²¢Î¬³ÖÊÊµ±µÄ³ÌĞò£¬È¥Æ¸ÓÃ·Ö°üÉÌ¹©»õÉÌºÍ·Ö¹©»õÉÌ¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹«Ë¾±£Áô·Ö°üÉÌ¹©»õÉÌºÍ·Ö¹©»õÉÌ³ĞÅµ¸ºÉÏÉç»áÔğÈÎµÄÊÊµ±¼ÇÂ¼¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§½¨Á¢ÁËÒ»¸öÖÆ¶È£¬ÒÔ¼à²ì·Ö°üÉÌ¹©»õÉÌºÍ·Ö¹©»õÉÌµÄÉç»áÔğÈÎ±íÏÖÊÇ·ñ×ñÕÕSA8000±ê×¼µÄÒªÇó¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§±£ÁôºÏÀíµÄÖ¤¾İ£¬Ö¤Ã÷·Ö°üÉÌ¹©»õÉÌºÍ·Ö¹©»õÉÌ²»¶Ï¸ÄÉÆ£¬ÒÔ´ïµ½SA8000±ê×¼µÄÒªÇó¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§Ö§¸¶µÄ¹¤×ÊĞèÒª×ãÒÔÖ§¸¶¹ÍÔ±ÈÕ³£Éú»îµÄ»ù±¾ĞèÒª£¬ÒÔ¼°ÈÃ¹ÍÔ±µÃµ½Ò»Ğ©¿ÉÖ§ÅäµÄÊÕÈë¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§½¨Á¢ºÍÒÔÎÄ¼ş¼ÇÂ¼ÓĞ¹Ø¸ï³ıÍ¯¹¤µÄ·½ÕëºÍ³ÌĞò£¬²¢ÇÒÅ¬Á¦Î¬³ÖºÍÓĞĞ§µØÓëÔ±¹¤ºÍÆäËüÀûÒæ¹ØÏµ·½¾Í´ËÎÊÌâ¹µÍ¨¡£</span></p>
+<p><span style="FONT-SIZE: small">½¨Òé¹¤³§½¨Á¢ºÍÎ¬³ÖÒ»Ì×³ÌĞò£¬ÒÔ¶¨ÆÚÓëËùÓĞÀûÒæ¹ØÏµ·½¾ÍSA8000±ê×¼ËùÒªÇóµÄ±íÏÖ½øĞĞ¹µÍ¨£¬µ±ÖĞ°üÀ¨£¬µ«²»ÏŞÓÚ£¬¹ÜÀí¼ìÌÖºÍ¼à²ì»î¶¯µÄ½á¹û¡£<br />
+</span></p>
+</div>
+
+<!--·ÖÒ³--> 
+<div class="catlist_sp">&nbsp;</div>
+
+
+		<div style="padding-top:10px;">
+		<ul>
+		<li><strong>ÉÏÒ»¸ö£º</strong>  
+        <a href="/factory/factory147.htm" target="_blank" title="BSCIÑé³§ÄÚÈİÕûÀí">BSCIÑé³§ÄÚÈİÕûÀí</a> 
+        </li>
+		<li><strong>ÏÂÒ»¸ö£º</strong> 
+        <a href="/factory/factory149.htm" target="_blank" title="BSCIÑé³§Á÷³ÌÖ¸µ¼£¨Ò»£©">BSCIÑé³§Á÷³ÌÖ¸µ¼£¨Ò»£©</a> 
+         </li>
+        </ul>
+		</div>
+       
+</div>
+<!--END:ÄÚÈİÕıÎÄ-->
+        
+    </div> 
+    <!-- e:ÓÒ1 -->
+ 
+</div>
+<div class="footer">
+
+<p>
+
+<a href="/">ç½‘ç«™é¦–é¡µ</a> | 
+
+		<a href="/us/about.html">å…¬å¸ç®€ä»‹</a> | <a href="/news/">æ–°é—»èµ„è®¯</a> | <a href="/cases/">æˆåŠŸæ¡ˆä¾‹</a> |   <a href="/factory/">å®¢æˆ·éªŒå‚</a> |  <a href="/auth/auth_11.html">ä½“ç³»è®¤è¯å’¨è¯¢</a> |  <a href="/auth/auth_12.html">è®¤è¯æœºæ„å’¨è¯¢</a> | <a href="/guestbook/">ç½‘ç«™ç•™è¨€</a> |  <a href="/us/conact.html">è”ç³»æˆ‘ä»¬</a>   
+
+       
+
+     </p>
+
+    <div class="footer_b">
+
+        <p>
+
+        Copyright &#169; 2008-2012  <a href="http://www.sruis.com">ÉÏº£Ê¦ÈñÆóÒµ¹ÜÀí×ÉÑ¯ÓĞÏŞ¹«Ë¾</a> °æÈ¨ËùÓĞ  
+
+          å¤‡æ¡ˆï¼š<a href="http://www.miibeian.gov.cn" target="_blank">»¦ICP±¸12042867ºÅ-1</a> 
+         </p>
+
+        <p>
+
+		<SCRIPT language="javascript" type="text/javascript"  src="/app/count/count.php"></script>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/app/app.php?moduleid=5&html=show&id=148"></script>
+      
+
+<style type="text/css"> 
+.floatonline_1{ padding:1px; width:130px; text-align:left;}
+.scroll_title_2{height:25px; line-height:25px; background:url(/style/default/images/online4_1.gif) no-repeat 0px 0px; position:relative;}
+.scroll_title_2 span{ padding-left:15px; font-weight:bold; color:#FFFFFF;}
+.scroll_title_2 a{ display:block; position:absolute; right:8px; top:6px; line-height:15px;  width:11px; height:11px; background:url(/style/default/images/close2_1.gif) no-repeat 0px 0px;}
+.scroll_main2{ padding:4px; background:#c5e2f8; border:1px solid #498bcf;}
+.scroll_text2{ background:#FFFFFF; border:1px solid #a7d8d7; padding:3px;}
+.scroll_qq_1{padding:2px 2px 0px 2px; text-align:center; color:#333333; }
+.scroll_qq_1 img{padding:5px 0px 0px 0px;}
+.scroll_skype_1{ padding:5px;}
+.scroll_alibaba_1{ padding:5px;}
+.scroll_foot_2{ background:#FFFFFF; border:1px solid #a7d8d7; text-align:center; padding:3px; line-height:18px; margin-top:5px;}}
+</style>
+<script type='text/javascript' src='/style/default/js/Contact.js'></script>
+<div id='floatDivr' style=' top:150px; right:0px;position: absolute; z-index:100;' class='floatonline_1'>
+<div class='scroll_title_2'><span>ÔÚÏß×ÉÑ¯</span><a href='#' title='¹Ø±Õ' onmousedown='Mouseclose()'>&nbsp;</a></div>
+<div class='scroll_main2'>
+<div class='scroll_text2'>
+<div class='scroll_qq_1'>
+¸¶¾­Àí<a href='tencent://message/?uin=361459714&Site=&Menu=yes'  title='QQÔÚÏß×ÉÑ¯' style='text-decoration:none;'>
+<img border='0' SRC='http://wpa.qq.com/pa?p=1:361459714:6' align="middle"></a>
+</div>
+<div class='scroll_qq_1'>
+ĞÁĞ¡½ã<a href='tencent://message/?uin=1296602272&Site=&Menu=yes'  title='QQÔÚÏß×ÉÑ¯' style='text-decoration:none;'>
+<img border='0' SRC='http://wpa.qq.com/pa?p=1:1296602272:6' align="middle"></a>
+</div>
+<div class='scroll_qq_1'>
+ºúĞ¡½ã<a href='tencent://message/?uin=970966634&Site=&Menu=yes'  title='QQÔÚÏß×ÉÑ¯' style='text-decoration:none;'>
+<img border='0' SRC='http://wpa.qq.com/pa?p=1:970966634:6' align="middle"></a>
+</div>
+</div>
+<div class='scroll_foot_2'><span style='font-size:12px; font-weight:bold;'>·şÎñÈÈÏß<br>021-57781112</span></div>
+</div>
+</DIV>
+<SCRIPT language=JavaScript type=text/JavaScript> 
+function Mouseclose(){document.getElementById('floatDivr').style.display='none';}
+
+window.setInterval("heartBeat()",2);
+</SCRIPT>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4e78d5c1e9c2317781abe2571b30876f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<center><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258504154'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1258504154%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script></center>
+
+
+</body>
+
+</html>
