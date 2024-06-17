@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>guozhiman &#8211; 郭智满的部落</title>
+	<atom:link href="http://localhost/author/guozhiman/feed/?simply_static_page=98" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 17 Jun 2024 06:53:01 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.4</generator>
+	<item>
+		<title>免费、开源：五分钟带你了解什么是Doris</title>
+		<link>/2024/06/17/21/</link>
+					<comments>/2024/06/17/21/#respond</comments>
+		
+		<dc:creator><![CDATA[guozhiman]]></dc:creator>
+		<pubDate>Mon, 17 Jun 2024 06:53:01 +0000</pubDate>
+				<category><![CDATA[开源]]></category>
+		<guid isPermaLink="false">/?p=21</guid>
+
+					<description><![CDATA[事情的起因是这样的 首先感谢大家和我互动，我尽量虚心接受大家的建议，尽量考虑到不同阶段的读者，尽量为大家提供更</p><p><a class="more-link btn btn-outline-danger" href="/2024/06/17/21/">Continue reading <span class="screen-reader-text">免费、开源：五分钟带你了解什么是Doris</span></a>]]></description>
+										<content:encoded><![CDATA[<p data-tool="mdnice编辑器">事情的起因是这样的</p>
+<figure data-tool="mdnice编辑器"><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-22" title="640-6" src="/wp-content/uploads/2024/06/640-6.png" alt="640-6" width="893" height="533" srcset="/wp-content/uploads/2024/06/640-6.png 893w, /wp-content/uploads/2024/06/640-6-300x179.png 300w, /wp-content/uploads/2024/06/640-6-768x458.png 768w" sizes="(max-width: 893px) 100vw, 893px" /></figure>
+<p data-tool="mdnice编辑器">首先感谢大家和我互动，我尽量虚心接受大家的建议，尽量考虑到不同阶段的读者，尽量为大家提供更多原创内容。</p>
+<p data-tool="mdnice编辑器">之前有写过《<a href="http://mp.weixin.qq.com/s?__biz=MzAxMjA0OTQwMg==&amp;mid=2450619751&amp;idx=1&amp;sn=1dc8ecb620ee8b53e623939ba4c8bdb7&amp;chksm=8c5213f2bb259ae464ece55f3cead5062f37bc89fc79bd12cce2746781e9bffa480174abad85&amp;scene=21#wechat_redirect" target="_blank" rel="noopener" data-itemshowtype="0" data-linktype="2">一个神奇的开源大数据必备工具——实时数仓Apache Doris</a>》，专门介绍了Doris。又写了《<a href="http://mp.weixin.qq.com/s?__biz=MzAxMjA0OTQwMg==&amp;mid=2450620193&amp;idx=1&amp;sn=b0ebd89619c8d1907836ec89cf0d264c&amp;chksm=8c5211b4bb2598a2aa3c0b1cae50dbc704eaed3abf9c486130b9fd3f1654ebb54e9c684715c6&amp;scene=21#wechat_redirect" target="_blank" rel="noopener" data-itemshowtype="0" data-linktype="2">基于Flink CDC实现Mysql实时同步到Doris系列教程五：Flink CDC提交任务并验证</a>》，在我心里可能就想当然的以为我的每一位读者都已经知道什么是Doris了。是我没有考虑到每天都有很多新的读者关注我，他们都是第一次看到我的内容，我的每一篇内容都应该考虑到每一位读者的接受度。所以以后我尽量可以把相关内容写清楚或者通过链接的方式方便新的读者查看。</p>
+<p data-tool="mdnice编辑器">为了满足大家的求知欲，我也主打一个听劝，本文再啰嗦一遍，重新介绍一下什么是Doris。</p>
+<h4 data-tool="mdnice编辑器">什么是Doris</h4>
+<p data-tool="mdnice编辑器"><span class="wx_search_keyword_wrap">Apache Doris<i class="wx_search_keyword"></i></span> 是一款基于 MPP 架构的高性能、实时的分析型<strong>数据库</strong>，以高效、简单、统一的特点被人们所熟知，仅需亚秒级响应时间即可返回海量数据下的查询结果，不仅可以支持高并发的点查询场景，也能支持高吞吐的复杂分析场景。</p>
+<p data-tool="mdnice编辑器">换句话说，Doris是一款免费、开源、易用且查询速度非常快的数据库，完全可以满足大数据分析场景，这也是我为什么会推荐大家体验Doris。</p>
+<figure data-tool="mdnice编辑器"><img decoding="async" class="alignnone size-full wp-image-23" title="640-7" src="/wp-content/uploads/2024/06/640-7.png" alt="640-7" width="888" height="500" srcset="/wp-content/uploads/2024/06/640-7.png 888w, /wp-content/uploads/2024/06/640-7-300x169.png 300w, /wp-content/uploads/2024/06/640-7-768x432.png 768w" sizes="(max-width: 888px) 100vw, 888px" /><figcaption>Apache Doris</figcaption></figure>
+<h4 data-tool="mdnice编辑器">Doris的前世今生</h4>
+<ul class="list-paddingleft-1" data-tool="mdnice编辑器">
+<li>
+<section>Doris 最早是诞生于百度广告报表业务的 Palo 项目</section>
+</li>
+<li>
+<section>2017 年正式对外<strong>开源</strong></section>
+</li>
+<li>
+<section>2018 年 7 月由百度捐赠给 Apache 基金会进行孵化，之后在 Apache 导师的指导下由孵化器项目管理委员会成员进行孵化和运营。</section>
+</li>
+<li>
+<section>2022 年 6 月，Apache Doris 成功从 Apache 孵化器毕业，正式成为 <strong>Apache 顶级项目</strong>（Top-Level Project，TLP）。</section>
+</li>
+</ul>
+<p data-tool="mdnice编辑器">目前 Apache Doris 社区已经聚集了来自不同行业数百家企业的 600 余位贡献者，并且每月活跃贡献者人数也超过 120 位。</p>
+<h4 data-tool="mdnice编辑器">谁在使用Doris</h4>
+<ul class="list-paddingleft-1" data-tool="mdnice编辑器">
+<li>
+<section>中大型企业</section>
+</li>
+</ul>
+<p data-tool="mdnice编辑器">全球超过4000家中大型企业在生产环境中使用Doris。在中国市值或估值排行前 50 的互联网公司中，有超过 80% 长期使用 Apache Doris，包括百度、美团、小米、京东、字节跳动、阿里巴巴、腾讯、网易、快手、微博等</p>
+<ul class="list-paddingleft-1" data-tool="mdnice编辑器">
+<li>
+<section>重要行业</section>
+</li>
+</ul>
+<p data-tool="mdnice编辑器"><span class="wx_text_underline">金融、消费、电信、工业制造、能源、医疗、政务等领域也有着丰富的应用。金融行业可谓技术产品的炼金石、风向标。</span></p>
+<ul class="list-paddingleft-1" data-tool="mdnice编辑器">
+<li>
+<section><span class="wx_text_underline">云厂商</span></section>
+</li>
+</ul>
+<p data-tool="mdnice编辑器"><span class="wx_text_underline">阿里云、华为云、天翼云、腾讯云、百度云、火山引擎等都在提供托管的 Apache Doris 的云服务。也就是说我们不需要自己部署，直接购买云服务就可以直接使用。</span></p>
+<h4 data-tool="mdnice编辑器">Doris整体架构</h4>
+<p data-tool="mdnice编辑器">Doris 采用 MySQL 协议，高度兼容 MySQL 语法，支持标准 SQL，用户可以通过各类客户端工具来访问 Doris，并支持与 BI 工具的无缝对接。</p>
+<figure data-tool="mdnice编辑器"><img decoding="async" class="alignnone size-full wp-image-24" title="640-8" src="/wp-content/uploads/2024/06/640-8.png" alt="640-8" width="1080" height="516" srcset="/wp-content/uploads/2024/06/640-8.png 1080w, /wp-content/uploads/2024/06/640-8-300x143.png 300w, /wp-content/uploads/2024/06/640-8-1024x489.png 1024w, /wp-content/uploads/2024/06/640-8-768x367.png 768w" sizes="(max-width: 1080px) 100vw, 1080px" /><figcaption>Doris架构图</figcaption></figure>
+<p data-tool="mdnice编辑器">Doris架构也非常简单，只有两类进程：</p>
+<ul class="list-paddingleft-1" data-tool="mdnice编辑器">
+<li>
+<section>Frontend（FE）</section>
+</li>
+</ul>
+<p data-tool="mdnice编辑器">主要负责用户请求的接入、查询解析规划、元数据的管理、节点管理相关工作</p>
+<ul class="list-paddingleft-1" data-tool="mdnice编辑器">
+<li>
+<section>Backend（BE）</section>
+</li>
+</ul>
+<p data-tool="mdnice编辑器">主要负责数据存储、查询计划的执行</p>
+<p data-tool="mdnice编辑器">需要注意的是，这两类进程都是可以<strong>横向扩展</strong>的，单集群可以支持到数百台机器，数十 PB 的存储容量。并且这两类进程通过一致性协议来保证服务的<strong>高可用</strong>和数据的<strong>高可靠</strong>。这种高度集成的架构设计极大地降低了一款分布式系统的运维成本。</p>
+<p data-tool="mdnice编辑器">至此，用简短的篇幅为大家介绍了什么是Doris，希望可以帮助到大家。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2024/06/17/21/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>五分钟带你了解什么是StarRocks</title>
+		<link>/2024/06/17/14/</link>
+					<comments>/2024/06/17/14/#respond</comments>
+		
+		<dc:creator><![CDATA[guozhiman]]></dc:creator>
+		<pubDate>Mon, 17 Jun 2024 06:51:25 +0000</pubDate>
+				<category><![CDATA[开源]]></category>
+		<guid isPermaLink="false">/?p=14</guid>
+
+					<description><![CDATA[大数据量需要实时查询已经成为很多企业面临的一个难题，为了帮助大家解决这一难题，前面有给大家详细介绍Doris，</p><p><a class="more-link btn btn-outline-danger" href="/2024/06/17/14/">Continue reading <span class="screen-reader-text">五分钟带你了解什么是StarRocks</span></a>]]></description>
+										<content:encoded><![CDATA[<p data-tool="mdnice编辑器">大数据量需要实时查询已经成为很多企业面临的一个难题，为了帮助大家解决这一难题，前面有给大家详细介绍<span class="wx_search_keyword_wrap">Doris<i class="wx_search_keyword"></i></span>，有兴趣的话可以查看相关内容：</p>
+<p data-tool="mdnice编辑器">《<a href="http://mp.weixin.qq.com/s?__biz=MzAxMjA0OTQwMg==&amp;mid=2450620219&amp;idx=1&amp;sn=e18a680a31087f4b68e0e2cc41fdda19&amp;chksm=8c5211aebb2598b8fcfe99deff90c8f6bf5d34baea28580a6b20e5114dcd49c4067c07f706fb&amp;scene=21#wechat_redirect" target="_blank" rel="noopener" data-itemshowtype="0" data-linktype="2">五分钟部署Doris的极简部署流程</a>》</p>
+<p data-tool="mdnice编辑器">《<a href="http://mp.weixin.qq.com/s?__biz=MzAxMjA0OTQwMg==&amp;mid=2450620282&amp;idx=1&amp;sn=74ec119463f53505a06a788fa11412d6&amp;chksm=8c5211efbb2598f9a3ef4560b167abd03331365f146025502db544a16b744ec590623115a2d7&amp;scene=21#wechat_redirect" target="_blank" rel="noopener" data-itemshowtype="0" data-linktype="2">抛弃Docker：十分钟完成单机部署大数据实时数仓数据库Doris</a>》</p>
+<p data-tool="mdnice编辑器">《<a href="http://mp.weixin.qq.com/s?__biz=MzAxMjA0OTQwMg==&amp;mid=2450620232&amp;idx=1&amp;sn=1f45fed1ab4f4a302d10fe234a23363c&amp;chksm=8c5211ddbb2598cb4e29a1bcb978f52ecf5c78f2fc5e01422919afc0ed26a3dcb2700169572f&amp;scene=21#wechat_redirect" target="_blank" rel="noopener" data-itemshowtype="0" data-linktype="2">免费、开源：五分钟带你了解什么是Doris</a>》</p>
+<p data-tool="mdnice编辑器">那么这时就会有同学要发出灵魂拷问了，Doris难道是唯一选择吗？答案是否定的。我们经常说一山不容二虎，但是在商业领域来讲，一家独大谈何容易。</p>
+<p data-tool="mdnice编辑器">本文将为大家介绍Doris的竟品——新一代极速全场景MPP数据库<span class="wx_search_keyword_wrap">StarRocks<i class="wx_search_keyword"></i></span>。</p>
+<h4 data-tool="mdnice编辑器">什么是StarRocks</h4>
+<p data-tool="mdnice编辑器">StarRocks 是新一代极速全场景 MPP (Massively Parallel Processing) 数据库。</p>
+<blockquote data-tool="mdnice编辑器"><p>❝StarRocks 的愿景是能够让用户的数据分析变得更加简单和敏捷。</p></blockquote>
+<p data-tool="mdnice编辑器">用户无需经过复杂的预处理，就可以用 StarRocks 来支持多种数据分析场景的极速分析。</p>
+<figure data-tool="mdnice编辑器"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-15" title="640-2" src="/wp-content/uploads/2024/06/640-2.png" alt="640-2" width="300" height="61" /></figure>
+<p data-tool="mdnice编辑器">StarRocks <strong>兼容 MySQL 协议，支持标准 SQL 语法</strong>，易于对接使用，全系统无外部依赖，高可用，易于运维管理。StarRocks 还兼容多种主流 BI 产品，包括 Tableau、<span class="wx_search_keyword_wrap">Power BI<i class="wx_search_keyword"></i></span>、FineBI 和 Smartbi。</p>
+<figure data-tool="mdnice编辑器"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-17" title="640-3" src="/wp-content/uploads/2024/06/640-3.png" alt="640-3" width="1080" height="648" srcset="/wp-content/uploads/2024/06/640-3.png 1080w, /wp-content/uploads/2024/06/640-3-300x180.png 300w, /wp-content/uploads/2024/06/640-3-1024x614.png 1024w, /wp-content/uploads/2024/06/640-3-768x461.png 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+<p data-tool="mdnice编辑器">StarRocks 能很好地支持实时数据分析，并能实现对实时更新数据的高效查询。</p>
+<h4 data-tool="mdnice编辑器">StarRocks适用哪些场景</h4>
+<p data-tool="mdnice编辑器">StarRocks 可以满足企业级用户的多种分析需求，包括 OLAP (Online Analytical Processing) 多维分析、定制报表、实时数据分析和 <span class="wx_search_keyword_wrap">Ad-hoc<i class="wx_search_keyword"></i></span> 数据分析等。</p>
+<h6 data-tool="mdnice编辑器">OLAP 多维分析</h6>
+<p data-tool="mdnice编辑器">利用 StarRocks 的 MPP 框架和向量化执行引擎，用户可以灵活的选择雪花模型，星型模型，宽表模型或者预聚合模型。适用于灵活配置的多维分析报表</p>
+<h6 data-tool="mdnice编辑器">实时数据仓库</h6>
+<p data-tool="mdnice编辑器">StarRocks 设计和实现了主键表，能够实时更新数据并极速查询，可以秒级同步 TP (Transaction Processing) 数据库的变化，构建实时数仓</p>
+<h6 data-tool="mdnice编辑器">高并发查询</h6>
+<p data-tool="mdnice编辑器">StarRocks 通过良好的数据分布特性，灵活的索引以及<span class="wx_search_keyword_wrap">物化视图<i class="wx_search_keyword"></i></span>等特性，可以解决面向用户侧的分析场景</p>
+<h6 data-tool="mdnice编辑器">统一分析</h6>
+<p data-tool="mdnice编辑器">通过使用一套系统解决多维分析、高并发查询、预计算、实时分析查询等场景，降低系统复杂度和多技术栈开发与维护成本。</p>
+<p data-tool="mdnice编辑器">使用 StarRocks 统一管理数据湖和数据仓库，将高并发和实时性要求很高的业务放在 StarRocks 中分析，也可以使用 External Catalog 和外部表进行数据湖上的分析。</p>
+<h4 data-tool="mdnice编辑器">StarRocks初体验</h4>
+<p data-tool="mdnice编辑器">使用docker，只需要一行命令我们就可以快速体验StarRocks了</p>
+<pre data-tool="mdnice编辑器"><code>docker run -p 9030:9030 -p 8030:8030 -p 8040:8040 -itd \
+--name quickstart starrocks/allin1-ubuntu
+</code></pre>
+<blockquote data-tool="mdnice编辑器"><p>❝此处需要用到docker，没有安装docker的同学建议学习一下，日后会非常方便。由于一些不可言说的原因，可能需要科学上网才能访问，请同学们自行解决。</p></blockquote>
+<p data-tool="mdnice编辑器">由于镜像比较大，首次下载镜像会比较慢，同学们要耐心等待哦。</p>
+<p data-tool="mdnice编辑器">容器启动以后，访问StarRocks的Web UI<code>http://localhost:8030/</code>，用户名<code>root</code>，密码为空。<img loading="lazy" decoding="async" class="alignnone size-full wp-image-16" title="640-3" src="/wp-content/uploads/2024/06/640-3.png" alt="640-3" width="1080" height="648" srcset="/wp-content/uploads/2024/06/640-3.png 1080w, /wp-content/uploads/2024/06/640-3-300x180.png 300w, /wp-content/uploads/2024/06/640-3-1024x614.png 1024w, /wp-content/uploads/2024/06/640-3-768x461.png 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></p>
+<p data-tool="mdnice编辑器">登录成功后可以查看相关信息。</p>
+<figure data-tool="mdnice编辑器"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-18" title="640-4" src="/wp-content/uploads/2024/06/640-4.png" alt="640-4" width="1080" height="496" srcset="/wp-content/uploads/2024/06/640-4.png 1080w, /wp-content/uploads/2024/06/640-4-300x138.png 300w, /wp-content/uploads/2024/06/640-4-1024x470.png 1024w, /wp-content/uploads/2024/06/640-4-768x353.png 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></figure>
+<p data-tool="mdnice编辑器">与Doris不同的是，StarRocks提供的Web UI界面无法直接查询数据，查询数据则需要用Mysql客户端。</p>
+<p data-tool="mdnice编辑器">此处以DBeaver为例连接StarRocks，成功后就可以像使用Mysql数据一样来使用StarRocks了。<img loading="lazy" decoding="async" class="alignnone size-full wp-image-19" title="640-5" src="/wp-content/uploads/2024/06/640-5.png" alt="640-5" width="1080" height="897" srcset="/wp-content/uploads/2024/06/640-5.png 1080w, /wp-content/uploads/2024/06/640-5-300x249.png 300w, /wp-content/uploads/2024/06/640-5-1024x850.png 1024w, /wp-content/uploads/2024/06/640-5-768x638.png 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></p>
+<h4 data-tool="mdnice编辑器">进阶</h4>
+<p data-tool="mdnice编辑器">不管是Doris还是StarRocks，都可以很好地解决大数据场景下实时数据分析难的问题。从学习的角度而言，我们只需要优先选择一个就可以，不断从入门到进阶；从生产环境应用而言，我们可以对两款产品做充分调研之后，选择更加适合自身业务的产品。</p>
+<p data-tool="mdnice编辑器">
+]]></content:encoded>
+					
+					<wfw:commentRss>/2024/06/17/14/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>win系统 漏洞肆虐网络！</title>
+		<link>/2024/06/17/9/</link>
+					<comments>/2024/06/17/9/#respond</comments>
+		
+		<dc:creator><![CDATA[guozhiman]]></dc:creator>
+		<pubDate>Mon, 17 Jun 2024 06:45:57 +0000</pubDate>
+				<category><![CDATA[业界]]></category>
+		<guid isPermaLink="false">/?p=9</guid>
+
+					<description><![CDATA[美国网络安全和基础设施安全局（CISA）昨日发布公告，要求美国联邦教育、科学及文化委员会各机构 3 周内（截至</p><p><a class="more-link btn btn-outline-danger" href="/2024/06/17/9/">Continue reading <span class="screen-reader-text">win系统 漏洞肆虐网络！</span></a>]]></description>
+										<content:encoded><![CDATA[<p data-mpa-powered-by="yiban.io">美国网络安全和基础设施安全局（CISA）昨日发布公告，要求美国联邦教育、科学及文化委员会各机构 3 周内（截至 7 月 4 日）修补微软 Windows 10 / Windows 11 漏洞，以避免遭到黑客的网络攻击。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-10" title="640" src="/wp-content/uploads/2024/06/640.png" alt="640" width="1024" height="576" srcset="/wp-content/uploads/2024/06/640.png 1024w, /wp-content/uploads/2024/06/640-300x169.png 300w, /wp-content/uploads/2024/06/640-768x432.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p data-vmark="58ac">注：该安全漏洞跟踪编号为 CVE-2024-26169，存在于微软 Windows Error Reporting 错误中，是一个权限管理不当漏洞，在无需用户介入交互的情况下，可以让本地攻击者获得 SYSTEM 权限。</p>
+<p data-vmark="4024">微软于 2024 年 3 月 12 日补丁星期二活动中已经修复该漏洞，不过由于仍然有黑客利用该漏洞发起攻击，微软官方并未公布其漏洞细节。</p>
+<p data-vmark="8ab1"><span class="wx_search_keyword_wrap">赛门铁克<i class="wx_search_keyword"></i></span>安全研究人员本周发布报告，表示有证据表明 <span class="wx_search_keyword_wrap">Black Basta<i class="wx_search_keyword"></i></span> 勒索软件团伙（Cardinal 网络犯罪团伙，也被追踪为 UNC4394 和 Storm-1811）的操作者很可能是滥用该漏洞作为<span class="wx_search_keyword_wrap">零日攻击<i class="wx_search_keyword"></i></span>的幕后黑手。</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-11" title="640-1" src="/wp-content/uploads/2024/06/640-1.png" alt="640-1" width="1021" height="562" srcset="/wp-content/uploads/2024/06/640-1.png 1021w, /wp-content/uploads/2024/06/640-1-300x165.png 300w, /wp-content/uploads/2024/06/640-1-768x423.png 768w" sizes="(max-width: 1021px) 100vw, 1021px" /></p>
+<p data-vmark="b510">研究人员发现在这些攻击中，部署的 CVE-2024-26169 漏洞利用工具的一个变体的编译时间戳是 2 月 27 日，而第二个样本的编译时间戳更早，是 2023 年 12 月 18 日。</p>
+<p data-vmark="7343">这表明，在微软发布安全更新修补本地权限提升漏洞之前的 14 到 85 天，勒索软件组织已经有了一个有效的漏洞利用程序。</p>
+<p data-vmark="5dda">根据 Corvus Insurance 和网络安全公司 Elliptic 的研究，截至 2023 年 11 月，Black Basta 从 90 多名受害者那里收取了至少 1 亿美元的赎金。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2024/06/17/9/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

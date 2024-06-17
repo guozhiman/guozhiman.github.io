@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>业界 &#8211; 郭智满的部落</title>
+	<atom:link href="http://localhost/category/%E4%B8%9A%E7%95%8C/feed/?simply_static_page=71" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Mon, 17 Jun 2024 06:45:57 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.4</generator>
+	<item>
+		<title>win系统 漏洞肆虐网络！</title>
+		<link>/2024/06/17/9/</link>
+					<comments>/2024/06/17/9/#respond</comments>
+		
+		<dc:creator><![CDATA[guozhiman]]></dc:creator>
+		<pubDate>Mon, 17 Jun 2024 06:45:57 +0000</pubDate>
+				<category><![CDATA[业界]]></category>
+		<guid isPermaLink="false">/?p=9</guid>
+
+					<description><![CDATA[美国网络安全和基础设施安全局（CISA）昨日发布公告，要求美国联邦教育、科学及文化委员会各机构 3 周内（截至</p><p><a class="more-link btn btn-outline-danger" href="/2024/06/17/9/">Continue reading <span class="screen-reader-text">win系统 漏洞肆虐网络！</span></a>]]></description>
+										<content:encoded><![CDATA[<p data-mpa-powered-by="yiban.io">美国网络安全和基础设施安全局（CISA）昨日发布公告，要求美国联邦教育、科学及文化委员会各机构 3 周内（截至 7 月 4 日）修补微软 Windows 10 / Windows 11 漏洞，以避免遭到黑客的网络攻击。</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-10" title="640" src="/wp-content/uploads/2024/06/640.png" alt="640" width="1024" height="576" srcset="/wp-content/uploads/2024/06/640.png 1024w, /wp-content/uploads/2024/06/640-300x169.png 300w, /wp-content/uploads/2024/06/640-768x432.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p data-vmark="58ac">注：该安全漏洞跟踪编号为 CVE-2024-26169，存在于微软 Windows Error Reporting 错误中，是一个权限管理不当漏洞，在无需用户介入交互的情况下，可以让本地攻击者获得 SYSTEM 权限。</p>
+<p data-vmark="4024">微软于 2024 年 3 月 12 日补丁星期二活动中已经修复该漏洞，不过由于仍然有黑客利用该漏洞发起攻击，微软官方并未公布其漏洞细节。</p>
+<p data-vmark="8ab1"><span class="wx_search_keyword_wrap">赛门铁克<i class="wx_search_keyword"></i></span>安全研究人员本周发布报告，表示有证据表明 <span class="wx_search_keyword_wrap">Black Basta<i class="wx_search_keyword"></i></span> 勒索软件团伙（Cardinal 网络犯罪团伙，也被追踪为 UNC4394 和 Storm-1811）的操作者很可能是滥用该漏洞作为<span class="wx_search_keyword_wrap">零日攻击<i class="wx_search_keyword"></i></span>的幕后黑手。</p>
+<p><img decoding="async" class="alignnone size-full wp-image-11" title="640-1" src="/wp-content/uploads/2024/06/640-1.png" alt="640-1" width="1021" height="562" srcset="/wp-content/uploads/2024/06/640-1.png 1021w, /wp-content/uploads/2024/06/640-1-300x165.png 300w, /wp-content/uploads/2024/06/640-1-768x423.png 768w" sizes="(max-width: 1021px) 100vw, 1021px" /></p>
+<p data-vmark="b510">研究人员发现在这些攻击中，部署的 CVE-2024-26169 漏洞利用工具的一个变体的编译时间戳是 2 月 27 日，而第二个样本的编译时间戳更早，是 2023 年 12 月 18 日。</p>
+<p data-vmark="7343">这表明，在微软发布安全更新修补本地权限提升漏洞之前的 14 到 85 天，勒索软件组织已经有了一个有效的漏洞利用程序。</p>
+<p data-vmark="5dda">根据 Corvus Insurance 和网络安全公司 Elliptic 的研究，截至 2023 年 11 月，Black Basta 从 90 多名受害者那里收取了至少 1 亿美元的赎金。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2024/06/17/9/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
