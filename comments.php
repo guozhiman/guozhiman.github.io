@@ -1,0 +1,82 @@
+<?php
+/* 
+ * 精智B2博客主题 
+ * 主题版本 1.0
+ * 主题制作 精智主题 http://www.jianzhanpress.com
+ * QQ 4541293
+ */
+if ( post_password_required() ) {
+	return;
+}
+
+$wodepress_comment_count = get_comments_number();
+?>
+
+<div id="comments" class="comments-area default-max-width <?php echo get_option( 'show_avatars' ) ? 'show-avatars' : ''; ?>">
+
+	<?php
+	if ( have_comments() ) :
+		;
+		?>
+		<h3 class="comments-title">
+			<?php if ( '1' === $wodepress_comment_count ) : ?>
+				<?php esc_html_e( '1 comment', 'wodepress' ); ?>
+			<?php else : ?>
+				<?php
+				printf(
+					/* translators: %s: Comment count number. */
+					esc_html( _nx( '%s comment', '%s comments', $wodepress_comment_count, 'Comments title', 'wodepress' ) ),
+					esc_html( number_format_i18n( $wodepress_comment_count ) )
+				);
+				?>
+			<?php endif; ?>
+		</h3><!-- .comments-title -->
+
+		<ol class="comment-list">
+			<?php
+			wp_list_comments(
+				array(
+					'avatar_size' => 60,
+					'style'       => 'ol',
+					'short_ping'  => true,
+				)
+			);
+			?>
+		</ol><!-- .comment-list -->
+
+		<?php
+		the_comments_pagination(
+			array(
+				'before_page_number' => esc_html__( 'Page', 'wodepress' ) . ' ',
+				'mid_size'           => 0,
+				'prev_text'          => sprintf(
+					'%s <span class="nav-prev-text">%s</span>',
+					is_rtl() ? wodepress_get_icon_svg( 'ui', 'arrow_right' ) : wodepress_get_icon_svg( 'ui', 'arrow_left' ),
+					esc_html__( 'Older comments', 'wodepress' )
+				),
+				'next_text'          => sprintf(
+					'<span class="nav-next-text">%s</span> %s',
+					esc_html__( 'Newer comments', 'wodepress' ),
+					is_rtl() ? wodepress_get_icon_svg( 'ui', 'arrow_left' ) : wodepress_get_icon_svg( 'ui', 'arrow_right' )
+				),
+			)
+		);
+		?>
+
+		<?php if ( ! comments_open() ) : ?>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wodepress' ); ?></p>
+		<?php endif; ?>
+	<?php endif; ?>
+
+	<?php
+	comment_form(
+		array(
+			'logged_in_as'       => null,
+			'title_reply'        => esc_html__( 'Leave a comment', 'wodepress' ),
+			'title_reply_before' => '<h3 id="reply-title" class="comment-reply-title">',
+			'title_reply_after'  => '</h3>',
+		)
+	);
+	?>
+
+</div><!-- #comments -->

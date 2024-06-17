@@ -1,0 +1,25 @@
+
+# BEGIN WordPress
+# 在「BEGIN WordPress」与「END WordPress」之间的指令（行）是
+# 动态生成的，只应被 WordPress 过滤器修改。
+# 任何对标记之间的指令的修改都会被覆盖。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN Simply Static
+# 在「BEGIN Simply Static」与「END Simply Static」之间的指令（行）是
+# 动态生成的，只应被 WordPress 过滤器修改。
+# 任何对标记之间的指令的修改都会被覆盖。
+<Files "E:\wwwroot\wordpress/wp-content/uploads\simply-static\957b1539a74c903be05a5add54a9db1b-debug.txt">
+require all denied
+require host localhost
+</Files>
+# END Simply Static

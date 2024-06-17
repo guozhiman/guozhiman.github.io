@@ -1,0 +1,21 @@
+重要说明：
+此文件包包含4部分内容
+1、wodepress文件夹中为主题文件，这个上传到themes文件夹中
+2、jianzhanpress-blogb2.sql为演示站数据，如果需要将可以导入的数据库中
+3、uploads文件夹中为演示站中的图片文件，这个上传到wp-content文件夹中
+4、languages文件夹中为主题语言包文件，这个上传到wp-content文件夹中
+
+
+主题名称：精智B2博客主题
+
+主题版本：V1.0(免费版)
+
+主题作者：精智WP主题 JianZhanPress.com
+
+主题演示：http://demo.jianzhanpress.com/jzp-blogb2
+
+主题下载：https://www.jianzhanpress.com/?p=3229
+
+下载说明：此版本V1.0为免费版本，下载文件包中包括主题文件、演示数据.sql文件和uploads中的文件。
+
+默认帐号：admin 默认密码：123456

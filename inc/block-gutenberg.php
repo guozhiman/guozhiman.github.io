@@ -1,0 +1,1 @@
+<?php wp_head(); get_template_part( 'classes/class-wodepress', 'customize-font' ); ?>
